@@ -1,0 +1,6 @@
+pylint
+pylint-flask
+pylint-flask-sqlalchemy
+pytest
+black
+mypy
