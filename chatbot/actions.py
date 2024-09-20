@@ -1,4 +1,4 @@
-import os, re, io, logging
+import os, re, logging
 import httpx, openai, requests
 from .config import  model_config, SAVE_DIR
 import matplotlib.pyplot as plt
@@ -29,47 +29,6 @@ def wikipedia(q):
 def calculate(what):
     return eval(what)
 
-
-def plot_line(data, save_path=SAVE_DIR +"/plot.png"):
-    """
-    Plot the given data, save the image to a file, and return the base64 encoded image.
-    The data is expected to be a list of (x, y) tuples.
-    
-    Parameters:
-    - data: str, a string representing a list of (x, y) tuples, e.g., "[(1, 2), (2, 3), (3, 4)]"
-    - save_path: str, the file path where the plot image will be saved.
-    
-    Returns:
-    - str, the base64 encoded image.
-    """
-    print('plot_line')
-    # Parse the data assuming it's in the form of a string of tuples
-    points = eval(data)  # Example input: "[(1, 2), (2, 3), (3, 4)]"
-
-    # Separate the points into x and y coordinates
-    x, y = zip(*points)
-
-    # Ensure the directory exists
-    os.makedirs(os.path.dirname(save_path), exist_ok=True)
-
-    # Create the plot
-    plt.figure()
-    plt.plot(x, y, marker='o')
-    plt.title("Generated Plot")
-    plt.xlabel("X-axis")
-    plt.ylabel("Y-axis")
-
-    # Save the plot to a file
-    plt.savefig(save_path)
-    
-    # Save the plot to a BytesIO object
-    buf = io.BytesIO()
-    plt.savefig(buf, format='png')
-    plt.close()
-    buf.seek(0)
-
-    # Return the base64 string
-    return f"data:image/png;base64, line plotted and saved to {save_path}"
 
 
 def generate_schematic_image(description,  size="1792x1024"):
@@ -270,10 +229,206 @@ def rank_flights_by_preferences(flights, preferences):
     ranked_flights = sorted(flights, key=lambda x: x['price'])  # Example based on price
     return ranked_flights
 
+
+def fetch_tripadvisor_data(destination, preferences):
+    """
+    Fetch travel recommendations from the TripAdvisor API (or similar) based on user preferences.
+    
+    Parameters:
+    - destination (str): The location the user wants to visit.
+    - preferences (dict): User preferences, such as:
+        - 'budget' (int): The maximum budget for the trip in USD.
+        - 'rating' (float): The minimum rating of the hotel or activity.
+        - 'accommodation_type' (str): Type of accommodation (e.g., 'hotel', 'resort').
+        - 'amenities' (list): List of desired amenities (e.g., ['wifi', 'pool']).
+    
+    Returns:
+    - list: A list of ranked travel options (hotels, activities) based on user preferences.
+    """
+    tripadvisor_api_url = "https://api.tripadvisor.com/api/v1/hotels"  # This is a placeholder URL
+    api_key = "YOUR_TRIPADVISOR_API_KEY"  # Replace with your actual API key
+    
+    # Construct the query parameters based on user preferences
+    params = {
+        "destination": destination,
+        "budget": preferences.get('budget', 500),  # Default budget of $500 if not provided
+        "min_rating": preferences.get('rating', 4.0),  # Default minimum rating of 4.0
+        "accommodation_type": preferences.get('accommodation_type', 'hotel'),
+        "amenities": ",".join(preferences.get('amenities', [])),
+        "key": api_key
+    }
+    
+    # Fetch data from the TripAdvisor API
+    response = httpx.get(tripadvisor_api_url, params=params)
+    
+    if response.status_code != 200:
+        return f"Error: Unable to fetch data from TripAdvisor. Status code: {response.status_code}"
+    
+    travel_data = response.json()
+    
+    # Filter and rank the results based on preferences (e.g., rating and budget)
+    ranked_results = rank_results_by_preferences(travel_data, preferences)
+    
+    return ranked_results
+
+def rank_results_by_preferences(data, preferences):
+    """
+    Rank the results based on user preferences such as budget and rating.
+    
+    Parameters:
+    - data (list): List of travel options from the API.
+    - preferences (dict): The user preferences used to filter the results.
+    
+    Returns:
+    - list: A list of ranked travel options.
+    """
+    # Filter by budget and rating
+    filtered_data = [
+        item for item in data
+        if item['price'] <= preferences['budget'] and item['rating'] >= preferences['rating']
+    ]
+    
+    # Rank by rating (highest first)
+    ranked_data = sorted(filtered_data, key=lambda x: x['rating'], reverse=True)
+    
+    return ranked_data
+
+def search_tripadvisor(destination, preferences):
+    """
+    Action to search TripAdvisor for hotels and activities based on user preferences.
+    
+    Parameters:
+    - destination (str): The destination where the user is looking to travel.
+    - preferences (dict): User preferences (budget, rating, etc.).
+    
+    Returns:
+    - str: A summary of the best-matching travel options based on the preferences.
+    """
+    # Fetch and rank the data
+    ranked_results = fetch_tripadvisor_data(destination, preferences)
+    
+    if isinstance(ranked_results, str):
+        return ranked_results  # Error message
+    
+    # Generate a summary of the top matches
+    if not ranked_results:
+        return "No results found that match your preferences."
+    
+    # Example summary output
+    summary = "Here are the best-matching travel options based on your preferences:\n\n"
+    
+    for i, result in enumerate(ranked_results[:5], start=1):  # Top 5 results
+        summary += (
+            f"{i}. {result['name']} - Rating: {result['rating']}/5\n"
+            f"   Price: ${result['price']} per night\n"
+            f"   Location: {result['location']}\n"
+            f"   Amenities: {', '.join(result['amenities'])}\n\n"
+        )
+    
+    return summary
+
+
+def prepopulate_preferences_with_fallback(query):
+    """
+    Pre-populate preferences in JSON format using a lightweight OpenAI model and ask the user for missing info.
+
+    Parameters:
+    - query (str): The user's input query, typically about vacation preferences or flights.
+
+    Returns:
+    - dict: A dictionary containing pre-populated preferences, asking the user to fill in any missing values.
+    """
+    client = openai.OpenAI(api_key=openai.api_key)
+
+    prompt = f"Based on the following query: '{query}', pre-populate a JSON object containing travel preferences such as budget, preferred airports, and flight time preferences."
+
+    # Use a lower-size model like 'gpt-3.5-turbo' to infer preferences
+    completion = client.chat.completions.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {"role": "system", "content": "You are an AI assistant that helps users plan their vacations."},
+            {"role": "user", "content": prompt}
+        ]
+    )
+
+    # Convert the model output to a dictionary (assuming it returns a valid JSON structure)
+    preferences_json = completion.choices[0].message.content
+    preferences = eval(preferences_json)  # Ensure it gets converted to a Python dictionary
+
+    # Prepopulate missing fields with null values
+    required_fields = ['budget', 'preferred_airports', 'flight_time', 'rating', 'accommodation_type', 'amenities']
+
+    for field in required_fields:
+        if field not in preferences or preferences[field] is None:
+            preferences[field] = None
+
+    # Ask user for missing information
+    preferences = ask_for_missing_info(preferences)
+
+    return preferences
+def ask_for_missing_info(preferences):
+    """
+    Loop through the preferences and ask the user for missing information.
+    
+    Parameters:
+    - preferences (dict): The partially prepopulated preferences.
+    
+    Returns:
+    - dict: The updated preferences dictionary with user-provided values for missing keys.
+    """
+    questions = {
+        "budget": "What's your budget for the trip?",
+        "preferred_airports": "Which airport would you prefer to depart from?",
+        "flight_time": "What time of the day should the flight be (morning, afternoon, evening)?",
+        "rating": "What's the minimum acceptable rating (out of 5)?",
+        "accommodation_type": "What type of accommodation are you looking for (e.g., hotel, resort)?",
+        "amenities": "Any specific amenities you'd like (e.g., wifi, pool)?"
+    }
+
+    # Loop through preferences and ask the user for missing information
+    for key, question in questions.items():
+        if preferences.get(key) is None:  # Check if the field is missing (None)
+            user_input = ask_user(question)
+            if key == "amenities":
+                # Split amenities into a list if the field is amenities
+                preferences[key] = user_input.split(", ")
+            else:
+                preferences[key] = user_input
+
+    return preferences
+
+
+
+def query_with_prepopulated_preferences(query):
+    """
+    Action to query and prepopulate user preferences using a lightweight model, filling in missing info with ask_user.
+
+    Parameters:
+    - query (str): The user's input query.
+
+    Returns:
+    - dict: The final preferences dictionary after prepopulation and user input.
+    """
+    # Check if the query is relevant
+    if check_query_relevance(query):
+        # Prepopulate preferences, ask user for any missing values
+        preferences = prepopulate_preferences_with_fallback(query)
+        
+        # Proceed with the vacation planning or flight search using the preferences
+        print(f"Proceeding with the following preferences: {preferences}")
+        
+        # Example: Call the search action (e.g., flights or hotels)
+        result = known_actions['search_tripadvisor'](query, preferences)  # Replace with appropriate action
+        return result
+    
+    else:
+        return "The query is not relevant to vacation planning or flight searches."
+
+
 known_actions = {
+    "search_tripadvisor": search_tripadvisor,
     "wikipedia": wikipedia,
     "calculate": calculate,
-    "plot_line": plot_line,
     "generate_schematic_image": generate_schematic_image,
     "search_internet": search_internet, 
     "ask_user": ask_user,

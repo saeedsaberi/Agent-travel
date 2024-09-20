@@ -1,6 +1,9 @@
 from chatbot.bot import ChatBot
 from chatbot.config import other_params, system_prompt
-from chatbot.actions import known_actions, action_re
+from chatbot.actions import known_actions, action_re, query_with_prepopulated_preferences
+
+
+
 
 
 class UnknownActionError(Exception):
@@ -30,7 +33,9 @@ def query(question, max_turns=other_params.max_turns):
     bot = ChatBot(system=system_prompt)
     next_prompt = question
     i = 0
-    while i < other_params['max_turns']:
+            
+
+    while i < max_turns:
         i += 1
         result = bot(next_prompt)
         actions = [action_re.match(a) for a in result.split('\n') if action_re.match(a)]
@@ -38,15 +43,10 @@ def query(question, max_turns=other_params.max_turns):
             action, action_input = actions[0].groups()
             if action not in known_actions:
                 raise UnknownActionError(action, action_input)
+            elif action=='search_flights':
+                preferences = query_with_prepopulated_preferences(question)
             elif action=='search_internet':
                 observation = known_actions[action](question, action_input)
-            elif action=='search_flights':
-                    preferences = {
-                        "budget": ask_user("What's your flight budget?"),
-                        "airports": ask_user("Which airport would you prefer?"),
-                        "time_pref": ask_user("Do you prefer morning, afternoon, or evening flights?")
-                    }
-                    observation = known_actions[action](query, preferences)
             else:                  
                 observation = known_actions[action](action_input)
 
@@ -60,7 +60,7 @@ def query(question, max_turns=other_params.max_turns):
 
             return result
 
-def prepopulate_preferences(query):
+def prepopulate_preferences(question):
     """
     Pre-populate preferences in JSON format using a smaller OpenAI model.
     
@@ -73,14 +73,18 @@ def prepopulate_preferences(query):
     """
     client = openai.OpenAI(api_key=openai.api_key)
 
-    prompt = f"Based on the following query: '{query}', pre-populate a JSON object containing travel preferences such as budget, preferred airports, and flight time preferences."
+    prompt = f"Based on the following query: '{question}', 
+    pre-populate a JSON object containing travel preferences such as budget, preferred airports,
+    and flight time preferences."
 
     # Use a lower-size model like 'gpt-3.5-turbo' to infer preferences
     completion = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
-            {"role": "system", "content": "You are an AI assistant that helps users plan their vacations."},
-            {"role": "user", "content": prompt}
+            {"role": "system", 
+                "content": "You are an AI assistant that helps users plan their vacations."},
+            {"role": "user", 
+             "content": prompt}
         ]
     )
 
@@ -139,5 +143,8 @@ def query_with_relevance_check(query):
 
 
 if __name__ == "__main__":
-    query("what are the most important quantum gravity theories, rank them and explain why and explain their approach, plotschematics images to explain better")
-
+    question = "I want to book a flight to Paris and stay in a hotel with a pool."
+    if check_query_relevance(question):
+        result = query(question)
+    else:
+        print('question is not relevant to vacation planning or flight searches')
