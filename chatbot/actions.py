@@ -204,16 +204,16 @@ def search_flights(query, preferences):
         }
     >>> search_flights('Toronto', preferences)
     """
-    api_url = "YOUR_TRAVEL_API_ENDPOINT"
-    api_key = api_config['travel_API_KEY']
+    google_flight_api_url = "https://serpapi.com/search"
+ 
     
     # Use preferences to form the query
-    response = httpx.get(api_url, params={
+    response = httpx.get(google_flight_api_url, params={
         "destination": query,
         "budget": preferences['budget'],
         "airports": preferences['airports'],
         "time_of_day": preferences['time_pref'],
-        "key": api_key
+        "key": api_config['google_flights_api_key']
     })
     
     flights = response.json()
@@ -246,7 +246,7 @@ def fetch_tripadvisor_data(destination, preferences):
     - list: A list of ranked travel options (hotels, activities) based on user preferences.
     """
     tripadvisor_api_url = "https://api.tripadvisor.com/api/v1/hotels"  # This is a placeholder URL
-    api_key = "YOUR_TRIPADVISOR_API_KEY"  # Replace with your actual API key
+    api_key =  api_config['TRIPADVISOR_API_KEY']  
     
     # Construct the query parameters based on user preferences
     params = {
@@ -399,7 +399,7 @@ def ask_for_missing_info(preferences):
 
 
 
-def query_with_prepopulated_preferences(query):
+def query_with_prepopulated_preferences(query, preferences):
     """
     Action to query and prepopulate user preferences using a lightweight model, filling in missing info with ask_user.
 

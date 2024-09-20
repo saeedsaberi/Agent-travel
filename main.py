@@ -15,7 +15,7 @@ class UnknownActionError(Exception):
         super().__init__(self.message)
 
 
-def query(question, max_turns=other_params.max_turns):
+def query(question, preferences= None, max_turns=other_params.max_turns):
     """
     Executes a chatbot query to answer a given question.
     
@@ -44,7 +44,7 @@ def query(question, max_turns=other_params.max_turns):
             if action not in known_actions:
                 raise UnknownActionError(action, action_input)
             elif action=='search_flights':
-                preferences = query_with_prepopulated_preferences(question)
+                preferences = query_with_prepopulated_preferences(question, preferences)
             elif action=='search_internet':
                 observation = known_actions[action](question, action_input)
             else:                  
@@ -116,9 +116,9 @@ def check_query_relevance(query):
 
     relevance = completion.choices[0].message.content.strip().lower()
 
-    return relevance == 'yes'
+    return 'yes' in relevance 
 
-def query_with_relevance_check(query):
+def query_with_relevance(query):
     """
     Execute the vacation planning or flight search query if it is relevant.
     
@@ -145,6 +145,7 @@ def query_with_relevance_check(query):
 if __name__ == "__main__":
     question = "I want to book a flight to Paris and stay in a hotel with a pool."
     if check_query_relevance(question):
-        result = query(question)
+        preferences = query_with_relevance(question)
+        result = query(question, preferences=preferences)
     else:
         print('question is not relevant to vacation planning or flight searches')
