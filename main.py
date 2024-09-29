@@ -1,9 +1,8 @@
+import openai
 from chatbot.bot import ChatBot
-from chatbot.config import other_params, system_prompt
+from chatbot.config import other_params, system_prompt, api_config
 from chatbot.actions import known_actions, action_re, query_with_prepopulated_preferences
-
-
-
+openai.api_key = api_config['OPENAI_API_KEY']
 
 
 class UnknownActionError(Exception):
@@ -15,7 +14,7 @@ class UnknownActionError(Exception):
         super().__init__(self.message)
 
 
-def query(question, preferences= None, max_turns=other_params.max_turns):
+def query(question, preferences= None, max_turns= other_params["max_turns"]):
     """
     Executes a chatbot query to answer a given question.
     
@@ -52,6 +51,7 @@ def query(question, preferences= None, max_turns=other_params.max_turns):
 
             next_prompt = f"""{action} performed, resulting in Observation: {observation}, 
                                 next_prompt: {next_prompt}\n"""
+            print(action,'\n')
  
         else:
             print(result)
@@ -73,9 +73,11 @@ def prepopulate_preferences(question):
     """
     client = openai.OpenAI(api_key=openai.api_key)
 
-    prompt = f"Based on the following query: '{question}', 
-    pre-populate a JSON object containing travel preferences such as budget, preferred airports,
-    and flight time preferences."
+    prompt = (
+        f"Given the following query: '{question}', "
+        "generate a JSON object that includes travel preferences such as "
+        "budget, preferred airports, and preferred flight times."
+    )
 
     # Use a lower-size model like 'gpt-3.5-turbo' to infer preferences
     completion = client.chat.completions.create(
@@ -143,6 +145,7 @@ def query_with_relevance(query):
 
 
 if __name__ == "__main__":
+
     question = "I want to book a flight to Paris and stay in a hotel with a pool."
     if check_query_relevance(question):
         preferences = query_with_relevance(question)

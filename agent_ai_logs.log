@@ -47,3 +47,55 @@
 2024-08-22 14:59:24 - INFO - Logging system initialized.
 2024-08-22 16:22:26 - INFO - Logging system initialized.
 2024-08-22 16:22:39 - INFO - Logging system initialized.
+2024-09-28 19:13:31 - INFO - Logging system initialized.
+2024-09-28 19:15:03 - INFO - Logging system initialized.
+2024-09-28 19:15:41 - INFO - Logging system initialized.
+2024-09-28 19:16:09 - INFO - Logging system initialized.
+2024-09-28 19:17:08 - INFO - Logging system initialized.
+2024-09-28 19:18:36 - INFO - Logging system initialized.
+2024-09-28 19:18:37 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-28 19:18:38 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-28 19:18:39 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-28 19:18:40 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-28 19:18:41 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=flights%20to%20Paris%20and%20hotels%20with%20pools%20&offset=1 "HTTP/1.1 200 OK"
+2024-09-28 19:18:42 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=flights%20to%20Paris%20and%20hotels%20with%20pools%20&offset=11 "HTTP/1.1 200 OK"
+2024-09-28 19:18:42 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=flights%20to%20Paris%20and%20hotels%20with%20pools%20&offset=21 "HTTP/1.1 200 OK"
+2024-09-28 19:18:43 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=flights%20to%20Paris%20and%20hotels%20with%20pools%20&offset=31 "HTTP/1.1 200 OK"
+2024-09-28 19:18:44 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=flights%20to%20Paris%20and%20hotels%20with%20pools%20&offset=41 "HTTP/1.1 200 OK"
+2024-09-28 19:18:55 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-28 19:18:58 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-28 19:18:59 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-28 19:21:27 - INFO - Logging system initialized.
+2024-09-28 19:21:28 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-28 19:21:28 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-28 19:21:29 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-28 19:21:30 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-28 19:21:30 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=flights%20to%20Paris%20&offset=1 "HTTP/1.1 200 OK"
+2024-09-28 19:21:31 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=flights%20to%20Paris%20&offset=11 "HTTP/1.1 200 OK"
+2024-09-28 19:21:31 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=flights%20to%20Paris%20&offset=21 "HTTP/1.1 200 OK"
+2024-09-28 19:21:32 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=flights%20to%20Paris%20&offset=31 "HTTP/1.1 200 OK"
+2024-09-28 19:21:32 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=flights%20to%20Paris%20&offset=41 "HTTP/1.1 200 OK"
+2024-09-28 19:21:37 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-28 19:21:40 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-28 19:21:41 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-28 19:21:41 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=hotels%20in%20Paris%20with%20pools%20&offset=1 "HTTP/1.1 200 OK"
+2024-09-28 19:21:42 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=hotels%20in%20Paris%20with%20pools%20&offset=11 "HTTP/1.1 200 OK"
+2024-09-28 19:21:42 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=hotels%20in%20Paris%20with%20pools%20&offset=21 "HTTP/1.1 200 OK"
+2024-09-28 19:21:43 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=hotels%20in%20Paris%20with%20pools%20&offset=31 "HTTP/1.1 200 OK"
+2024-09-28 19:21:43 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=hotels%20in%20Paris%20with%20pools%20&offset=41 "HTTP/1.1 200 OK"
+2024-09-28 19:21:52 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-28 19:21:56 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-28 19:21:57 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-28 19:25:59 - INFO - Logging system initialized.
+2024-09-28 19:26:00 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-28 19:26:00 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-28 19:26:02 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-28 19:26:03 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-28 19:26:03 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=Flights%20to%20Paris%20and%20hotels%20with%20pools&offset=1 "HTTP/1.1 200 OK"
+2024-09-28 19:26:03 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=Flights%20to%20Paris%20and%20hotels%20with%20pools&offset=11 "HTTP/1.1 200 OK"
+2024-09-28 19:26:04 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=Flights%20to%20Paris%20and%20hotels%20with%20pools&offset=21 "HTTP/1.1 200 OK"
+2024-09-28 19:26:04 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=Flights%20to%20Paris%20and%20hotels%20with%20pools&offset=31 "HTTP/1.1 200 OK"
+2024-09-28 19:26:05 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=Flights%20to%20Paris%20and%20hotels%20with%20pools&offset=41 "HTTP/1.1 200 OK"
+2024-09-28 19:26:20 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-28 19:26:22 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-28 19:26:24 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
