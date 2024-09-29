@@ -45,8 +45,7 @@ This workflow ensures the AI can handle complex travel-related queries efficient
 
 ### Example Schematic
 
-![Simplified Schematic](./images/schematic_image.png)
-
+![Simplified Schematic](./images/AGENT.webp)
 The above diagram illustrates how the AI system processes travel-related queries and generates responses based on the user's preferences.
 
 ## Installation
