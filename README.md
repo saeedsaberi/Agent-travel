@@ -68,8 +68,9 @@ The above diagram illustrates how the AI system processes travel-related queries
 
 To start the chatbot, run the `main.py` file:
 
-```bash
-python main.py
+    ```bash
+        python main.py
+    ```
 
 This will launch the AI system, ready to handle queries related to vacation planning and flight/hotel searches.
 
