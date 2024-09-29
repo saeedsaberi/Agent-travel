@@ -45,7 +45,7 @@ This workflow ensures the AI can handle complex travel-related queries efficient
 
 ### Example Schematic
 
-![Simplified Schematic](./image/schematic_image.png)
+![Simplified Schematic](./images/schematic_image.png)
 
 The above diagram illustrates how the AI system processes travel-related queries and generates responses based on the user's preferences.
 
@@ -81,26 +81,3 @@ bash
 Copy code
 I want to book a flight to New York and stay in a hotel with free WiFi.
 The system will process the query, check for relevance, prepopulate preferences, and fetch flight/hotel recommendations based on user preferences.
-
-## Installation
-
-1. Clone the repository.
-2. Install the dependencies:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3. Set up your environment variable for the OpenAI API key:
-
-    ```bash
-    export OPENAI_API_KEY='your-api-key-here'
-    ```
-
-## Usage
-
-To start the chatbot, run the `main.py` file:
-
-```bash
-python main.py
-# Agent-travel
