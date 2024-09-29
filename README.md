@@ -1,3 +1,4 @@
+
 # AGENTIC AI Project
 
 This project implements an advanced Agentic AI system using OpenAI's API, designed to handle various queries related to vacation planning and travel searches. The AI autonomously performs actions such as querying flight information, searching for hotels, ranking results, and providing recommendations based on user preferences. The project features structured logging to record queries, actions, and results for debugging and further analysis.
@@ -44,7 +45,7 @@ This workflow ensures the AI can handle complex travel-related queries efficient
 
 ### Example Schematic
 
-![Simplified Schematic](./result_image/schematic_image.png)
+![Simplified Schematic](./image/schematic_image.png)
 
 The above diagram illustrates how the AI system processes travel-related queries and generates responses based on the user's preferences.
 
@@ -73,9 +74,33 @@ python main.py
 
 This will launch the AI system, ready to handle queries related to vacation planning and flight/hotel searches.
 
-Example Usage
+# Example Usage
+
 Input a query like:
 bash
 Copy code
 I want to book a flight to New York and stay in a hotel with free WiFi.
 The system will process the query, check for relevance, prepopulate preferences, and fetch flight/hotel recommendations based on user preferences.
+
+## Installation
+
+1. Clone the repository.
+2. Install the dependencies:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. Set up your environment variable for the OpenAI API key:
+
+    ```bash
+    export OPENAI_API_KEY='your-api-key-here'
+    ```
+
+## Usage
+
+To start the chatbot, run the `main.py` file:
+
+```bash
+python main.py
+# Agent-travel
