@@ -1,12 +1,18 @@
 import openai
 from chatbot.bot import ChatBot
 from chatbot.config import other_params, system_prompt, api_config
-from chatbot.actions import known_actions, action_re, query_with_prepopulated_preferences
-openai.api_key = api_config['OPENAI_API_KEY']
+from actions.actions import (
+    known_actions,
+    action_re,
+    query_with_prepopulated_preferences,
+)
+
+openai.api_key = api_config["OPENAI_API_KEY"]
 
 
 class UnknownActionError(Exception):
     """Exception raised when the bot encounters an unknown action."""
+
     def __init__(self, action, action_input):
         self.action = action
         self.action_input = action_input
@@ -14,45 +20,44 @@ class UnknownActionError(Exception):
         super().__init__(self.message)
 
 
-def query(question, preferences= None, max_turns= other_params["max_turns"]):
+def query(question, preferences=None, max_turns=other_params["max_turns"]):
     """
     Executes a chatbot query to answer a given question.
-    
+
     Args:
         question (str): The question to be answered.
         max_turns (int, optional): The maximum number of turns allowed for the query. Defaults to 5.
-    
+
     Returns:
         str: The answer to the question.
-    
+
     Raises:
         Exception: If the bot encounters an unknown action.
-    
+
     """
     bot = ChatBot(system=system_prompt)
     next_prompt = question
     i = 0
-            
 
     while i < max_turns:
         i += 1
         result = bot(next_prompt)
-        actions = [action_re.match(a) for a in result.split('\n') if action_re.match(a)]
+        actions = [action_re.match(a) for a in result.split("\n") if action_re.match(a)]
         if actions:
             action, action_input = actions[0].groups()
             if action not in known_actions:
                 raise UnknownActionError(action, action_input)
-            elif action=='search_flights':
+            elif action == "search_flights":
                 preferences = query_with_prepopulated_preferences(question, preferences)
-            elif action=='search_internet':
+            elif action == "search_internet":
                 observation = known_actions[action](question, action_input)
-            else:                  
+            else:
                 observation = known_actions[action](action_input)
 
             next_prompt = f"""{action} performed, resulting in Observation: {observation}, 
                                 next_prompt: {next_prompt}\n"""
-            print(action,'\n')
- 
+            print(action, "\n")
+
         else:
             print(result)
             print()
@@ -60,13 +65,14 @@ def query(question, preferences= None, max_turns= other_params["max_turns"]):
 
             return result
 
+
 def prepopulate_preferences(question):
     """
     Pre-populate preferences in JSON format using a smaller OpenAI model.
-    
+
     Parameters:
     - query (str): The user's input query, typically about vacation preferences or flights.
-    
+
     Returns:
     - dict: A dictionary containing pre-populated preferences such as budget, preferred airports,
             and flight time preferences.
@@ -83,24 +89,26 @@ def prepopulate_preferences(question):
     completion = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
-            {"role": "system", 
-                "content": "You are an AI assistant that helps users plan their vacations."},
-            {"role": "user", 
-             "content": prompt}
-        ]
+            {
+                "role": "system",
+                "content": "You are an AI assistant that helps users plan their vacations.",
+            },
+            {"role": "user", "content": prompt},
+        ],
     )
 
     preferences_json = completion.choices[0].message.content
 
     return preferences_json
 
+
 def check_query_relevance(query):
     """
     Check if the query is relevant to vacation planning or flight searches using a lower-size OpenAI model.
-    
+
     Parameters:
     - query (str): The user's input query.
-    
+
     Returns:
     - bool: True if the query is relevant, False otherwise.
     """
@@ -111,22 +119,26 @@ def check_query_relevance(query):
     completion = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
-            {"role": "system", "content": "You are an AI assistant that determines the relevance of queries."},
-            {"role": "user", "content": prompt}
-        ]
+            {
+                "role": "system",
+                "content": "You are an AI assistant that determines the relevance of queries.",
+            },
+            {"role": "user", "content": prompt},
+        ],
     )
 
     relevance = completion.choices[0].message.content.strip().lower()
 
-    return 'yes' in relevance 
+    return "yes" in relevance
+
 
 def query_with_relevance(query):
     """
     Execute the vacation planning or flight search query if it is relevant.
-    
+
     Parameters:
     - query (str): The user's input query.
-    
+
     Returns:
     - str: The result of the query, or a message indicating that the query is not relevant.
     """
@@ -136,12 +148,12 @@ def query_with_relevance(query):
         preferences = prepopulate_preferences(query)
 
         # Proceed with the flight search or vacation planning
-        print(f"Query is relevant. Proceeding with the search...\nPreferences: {preferences}")
+        print(
+            f"Query is relevant. Proceeding with the search...\nPreferences: {preferences}"
+        )
         return preferences  # You can then use this for the actual search logic
     else:
         return "The query is not relevant to vacation planning or flight searches."
-
-
 
 
 if __name__ == "__main__":
@@ -151,4 +163,4 @@ if __name__ == "__main__":
         preferences = query_with_relevance(question)
         result = query(question, preferences=preferences)
     else:
-        print('question is not relevant to vacation planning or flight searches')
+        print("question is not relevant to vacation planning or flight searches")
