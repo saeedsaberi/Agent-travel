@@ -1,8 +1,10 @@
 import logging
 import os
-import requests
-from chatbot.config import SAVE_DIR, api_config
+
+import requests  # type: ignore
 from openai import OpenAI
+
+from chatbot.config import SAVE_DIR, api_config
 
 
 def generate_schematic_image(description, size="1792x1024"):

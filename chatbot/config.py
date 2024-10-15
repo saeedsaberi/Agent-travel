@@ -1,14 +1,18 @@
 # chatbot/settings.py
-
 import os
+
 # API Configuration
 api_config = {
     "OPENAI_API_KEY": os.environ.get("OPENAI_API_KEY", "your-default-api-key"),
     "google_API_KEY": os.environ.get("google_API_KEY", "your-default-api-key"),
     "bing_API_KEY": os.environ.get("bing_API_KEY", "your-default-api-key"),
-    "TRIPADVISOR_API_KEY": os.environ.get("TRIPADVISOR_API_KEY", "your-default-api-key"),
-    'google_flight_API_KEY': os.environ.get("google_flight_API_KEY", "your-default-api-key"),
-    "bing_url": "https://api.bing.microsoft.com/v7.0/search"
+    "TRIPADVISOR_API_KEY": os.environ.get(
+        "TRIPADVISOR_API_KEY", "your-default-api-key"
+    ),
+    "google_flight_API_KEY": os.environ.get(
+        "google_flight_API_KEY", "your-default-api-key"
+    ),
+    "bing_url": "https://api.bing.microsoft.com/v7.0/search",
 }
 # Model Configuration
 model_config = {
@@ -18,11 +22,7 @@ model_config = {
 }
 
 # Other Parameters
-other_params = {
-    "max_turns": 5,
-    "retry_attempts": 3,
-    "max_pages": 5
-}
+other_params = {"max_turns": 5, "retry_attempts": 3, "max_pages": 5}
 
 SAVE_DIR = "result_image"
 os.makedirs(SAVE_DIR, exist_ok=True)

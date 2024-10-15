@@ -1,14 +1,31 @@
+"""
+Actions for the chatbot.
+"""
+
+import logging
 import os
 import re
-import logging
-import httpx
-import openai
-import requests
-from chatbot.config import api_config, model_config, other_params, SAVE_DIR
+
+from chatbot.config import SAVE_DIR
+
+from . import (
+    ask_user,
+    calculate,
+    generate_schematic_image,
+    query_wikipedia,
+    rank_flights_by_price,
+    rank_snippets_with_llm,
+    rank_travel_plans,
+    retrieve_and_rank_travel_plans,
+    search_flights,
+    search_internet,
+    search_tripadvisor,
+    summarize_with_llm,
+)
 
 # Configure logging
 logging.basicConfig(
-    filename="agent_ai_logs.log",
+    filename=os.path.join(SAVE_DIR, "agent_ai_logs.log"),
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
     datefmt="%Y-%m-%d %H:%M:%S",
@@ -25,6 +42,8 @@ KNOWN_ACTIONS = {
     "rank_flights_by_price": rank_flights_by_price,
     "retrieve_and_rank_travel_plans": retrieve_and_rank_travel_plans,
     "summarize_with_llm": summarize_with_llm,
+    "rank_travel_plans": rank_travel_plans,
+    "rank_snippets_with_llm": rank_snippets_with_llm,
 }
 
 ACTION_RE = re.compile(r"^Action: (\w+): (.*)$")

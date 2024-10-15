@@ -1,3 +1,11 @@
+import logging
+
+import httpx
+
+from actions import rank_snippets_with_llm, summarize_with_llm
+from chatbot.config import api_config, other_params
+
+
 def search_internet(context, query, max_pages=other_params["max_pages"]):
     """
     Perform an internet search using the Bing Search API, retrieve up to max_pages,
@@ -10,7 +18,10 @@ def search_internet(context, query, max_pages=other_params["max_pages"]):
     Returns:
     - str, a summary of the top-ranked search results.
     """
-    logging.info("search_internet")
+    logging.info(
+        f"search_internet: context={context}, query={query}, max_pages={max_pages}"
+    )
+
     bing_API_KEY = api_config["bing_API_KEY"]
     bing_url = api_config["bing_url"]
     headers = {"Ocp-Apim-Subscription-Key": bing_API_KEY}

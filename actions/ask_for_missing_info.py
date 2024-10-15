@@ -1,5 +1,7 @@
 import logging
 
+from . import ask_user
+
 
 def ask_for_missing_info(preferences):
     """
