@@ -1,7 +1,7 @@
 import logging
 
 
-def query_with_prepopulated_preferences(query, preferences):
+def search_flights_with_prepopulated_preferences(query, preferences):
     """
     Action to query and prepopulate user preferences using a lightweight model, filling in missing info with ask_user.
 
@@ -16,7 +16,7 @@ def query_with_prepopulated_preferences(query, preferences):
     if check_query_relevance(query):
         logging.info("Query is relevant. Proceeding with prepopulating preferences.")
         # Prepopulate preferences, ask user for any missing values
-        preferences = prepopulate_preferences_with_fallback(query)
+        preferences = prepopulate_preferences(query)
         logging.info(f"Prepopulated preferences: {preferences}")
 
         # Proceed with the vacation planning or flight search using the preferences
@@ -26,7 +26,7 @@ def query_with_prepopulated_preferences(query, preferences):
             query, preferences
         )  # Replace with appropriate action
         logging.info(f"Search result: {result}")
-        return result
+        return preferences
 
     else:
         logging.info("Query is not relevant to vacation planning or flight searches.")

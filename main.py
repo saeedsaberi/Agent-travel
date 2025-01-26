@@ -1,12 +1,13 @@
 import logging
+import streamlit as st
 
-import openai
-
-from actions import query_with_prepopulated_preferences
-from actions.define_actions import ACTION_RE, KNOWN_ACTIONS
+from actions_def.check_query_relevance import check_query_relevance
+from actions_def.populate_preferences import populate_preferences
+from actions_def.query_with_prepopulated_preferences import search_flights_with_prepopulated_preferences
+from actions_def.define_actions import action_re, known_actions
 from chatbot.bot import ChatBot
 from chatbot.config import api_config, other_params, system_prompt
-
+import openai
 openai.api_key = api_config["OPENAI_API_KEY"]
 
 logging.basicConfig(
@@ -25,9 +26,7 @@ class UnknownActionError(Exception):
         self.action_input = action_input
         self.message = f"Unknown action: {action} with input: {action_input}"
         super().__init__(self.message)
-
-
-def query(question, preferences=None, max_turns=other_params["max_turns"]):
+def process_query(question: str, max_turns: int = 5) -> str:
     """
     Executes a chatbot query to answer a given question.
 
@@ -39,44 +38,82 @@ def query(question, preferences=None, max_turns=other_params["max_turns"]):
         str: The answer to the question.
 
     Raises:
-        Exception: If the bot encounters an unknown action.
-
+        UnknownActionError: If the bot encounters an unknown action.
     """
-    bot = ChatBot(system=system_prompt)
-    next_prompt = question
-    i = 0
+    if not check_query_relevance(question):
+        raise ValueError("Query is not relevant to vacation planning or flight searches.")
 
-    while i < max_turns:
-        i += 1
+    preferences = populate_preferences(question)
+    print("preferences", preferences)
+    next_prompt =system_prompt + f"""
+            The previous history of interactions is: querry: {question}, preferences gathered from the user: {preferences}, then
+        """
+    bot = ChatBot(system_prompt = next_prompt)
+    for _ in range(max_turns):
         result = bot(next_prompt)
-        actions = [ACTION_RE.match(a) for a in result.split("\n") if ACTION_RE.match(a)]
-        if actions:
+        actions = [action_re.match(a) for a in result.split("\n") if action_re.match(a)]
+
+        if actions and actions[0]:
             action, action_input = actions[0].groups()
-            if action not in KNOWN_ACTIONS:
-                logging.error(f"Unknown action: {action} with input: {action_input}")
+
+            if action not in known_actions:
                 raise UnknownActionError(action, action_input)
-            elif action == "search_flights":
-                preferences = query_with_prepopulated_preferences(question, preferences)
+
+            if action == "search_flights":
+                preferences = search_flights_with_prepopulated_preferences(question, preferences)
+                
             elif action == "search_internet":
-                observation = KNOWN_ACTIONS[action](question, action_input)
+                observation = known_actions[action](action_input)
+                next_prompt = f"""
+                    The previous history of interactions is: {next_prompt}, then
+                    Action: {action} performed, resulting in Observation: {observation},
+                """
             else:
-                observation = KNOWN_ACTIONS[action](action_input)
+                observation = known_actions[action](action_input)
+                next_prompt = f"""
+                    The previous history of interactions is: {next_prompt}, then
+                    Action: {action} performed, resulting in Observation: {observation},
+                """
 
-            next_prompt = f"""{action} performed, resulting in Observation: {observation},
-                                next_prompt: {next_prompt}
-                                """
-            logging.info(action)
+    return next_prompt
 
+# Streamlit GUI setup
+def main():
+    st.title("AI Travel Planner Chatbot")
+    st.write("Interact with the chatbot to plan your vacation!")
+
+    # Options for the user
+    options = [
+        "I want to book a flight.",
+        "I want a hotel with a pool.",
+        "Help me find vacation packages.",
+        "Custom query"
+    ]
+
+    selected_option = st.selectbox("Choose an option or type your query below:", options)
+
+    # If custom query, allow user to input their own text
+    if selected_option == "Custom query":
+        user_query = st.text_input("Enter your custom query:", "")
+    else:
+        user_query = selected_option
+
+    # Submit button
+    if st.button("Submit Query"):
+        if user_query:
+            try:
+                result = process_query(user_query)
+                st.success("Chatbot Response:")
+                st.write(result)
+            except ValueError as e:
+                st.error(f"Error: {e}")
+            except UnknownActionError as e:
+                st.error(f"Unknown Action Error: {e.message}")
+            except Exception as e:
+                st.error(f"An unexpected error occurred: {e}")
         else:
-            logging.info(result)
+            st.warning("Please enter a query to proceed.")
 
-            return result
-
-
+# Run the app
 if __name__ == "__main__":
-    question = "I want to book a flight to Paris and stay in a hotel with a pool."
-    try:
-        result = query(question)
-        print(result)
-    except UnknownActionError as e:
-        logging.error(e)
+    main()

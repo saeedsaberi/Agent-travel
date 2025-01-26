@@ -1,0 +1,725 @@
+2024-12-08 18:10:42 - INFO - Processing query: <function query at 0x10e29c540>
+2024-12-08 18:13:07 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2024-12-08 18:13:10 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2024-12-08 18:14:32 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2024-12-08 18:16:02 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2024-12-08 18:16:41 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2024-12-08 18:16:41 - ERROR - Failed to determine query relevance: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-08 18:16:41 - INFO - Query is not relevant to vacation planning or flight searches.
+2024-12-08 18:18:41 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2024-12-08 18:18:41 - ERROR - Failed to determine query relevance: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-08 18:18:41 - INFO - Query is not relevant to vacation planning or flight searches.
+2024-12-08 18:20:02 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2024-12-08 18:20:02 - ERROR - Failed to determine query relevance: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-08 18:20:02 - INFO - Query is not relevant to vacation planning or flight searches.
+2024-12-08 18:20:14 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2024-12-08 18:20:14 - ERROR - Failed to determine query relevance: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-08 18:20:14 - INFO - Query is not relevant to vacation planning or flight searches.
+2024-12-08 18:20:24 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2024-12-08 18:20:24 - ERROR - Failed to determine query relevance: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-08 18:20:34 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2024-12-08 18:20:34 - ERROR - Failed to determine query relevance: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-08 18:20:34 - INFO - Query is not relevant to vacation planning or flight searches.
+2024-12-08 18:25:25 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2024-12-08 18:25:25 - ERROR - Failed to determine query relevance: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-08 18:25:25 - INFO - Query is not relevant to vacation planning or flight searches.
+2024-12-08 18:32:11 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2024-12-08 18:32:11 - ERROR - Failed to determine query relevance: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-08 18:32:11 - INFO - Query is not relevant to vacation planning or flight searches.
+2024-12-08 18:37:07 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2024-12-08 18:37:07 - ERROR - Failed to determine query relevance: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-08 18:37:07 - INFO - Query is not relevant to vacation planning or flight searches.
+2024-12-08 18:38:42 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2024-12-08 18:38:42 - ERROR - Failed to determine query relevance: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-08 18:38:42 - INFO - Query is not relevant to vacation planning or flight searches.
+2024-12-08 18:39:02 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2024-12-08 18:39:02 - ERROR - Failed to determine query relevance: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-08 18:39:02 - INFO - Query is not relevant to vacation planning or flight searches.
+2024-12-08 18:40:00 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2024-12-08 18:40:00 - ERROR - Failed to determine query relevance: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-08 18:40:00 - INFO - Query is not relevant to vacation planning or flight searches.
+2024-12-08 18:40:34 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2024-12-08 18:40:34 - ERROR - Failed to determine query relevance: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-08 18:40:34 - INFO - Query is not relevant to vacation planning or flight searches.
+2024-12-08 18:42:04 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2024-12-08 18:42:04 - ERROR - Failed to determine query relevance: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-08 18:42:04 - INFO - Query is not relevant to vacation planning or flight searches.
+2024-12-08 18:44:16 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2024-12-08 18:44:16 - ERROR - Failed to determine query relevance: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-08 18:44:16 - INFO - Query is not relevant to vacation planning or flight searches.
+2024-12-08 18:44:25 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2024-12-08 18:44:25 - ERROR - Failed to determine query relevance: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-08 18:44:25 - INFO - Query is not relevant to vacation planning or flight searches.
+2024-12-08 18:44:59 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2024-12-08 18:44:59 - ERROR - Failed to determine query relevance: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-12-08 18:44:59 - INFO - Query is not relevant to vacation planning or flight searches.
+2025-01-15 19:52:48 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2025-01-15 19:52:48 - ERROR - Failed to determine query relevance: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-01-15 19:52:48 - INFO - Query is not relevant to vacation planning or flight searches.
+2025-01-15 19:54:04 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2025-01-15 19:54:04 - ERROR - Failed to determine query relevance: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-01-15 19:54:04 - INFO - Query is not relevant to vacation planning or flight searches.
+2025-01-15 20:06:14 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2025-01-15 20:06:14 - ERROR - Failed to determine query relevance: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-01-15 20:06:14 - INFO - Query is not relevant to vacation planning or flight searches.
+2025-01-15 20:06:59 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2025-01-15 20:06:59 - ERROR - Failed to determine query relevance: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-01-15 20:06:59 - INFO - Query is not relevant to vacation planning or flight searches.
+2025-01-15 20:07:43 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2025-01-15 20:07:43 - ERROR - Failed to determine query relevance: cannot access local variable 'completion' where it is not associated with a value
+2025-01-15 20:07:43 - INFO - Query is not relevant to vacation planning or flight searches.
+2025-01-15 20:14:03 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2025-01-15 20:14:05 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 20:14:05 - INFO - relevance checked, Proceeding with the the query...+I want to book a flight to Paris and stay in a hotel with a pool.
+2025-01-15 20:14:43 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2025-01-15 20:14:43 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 20:14:43 - INFO - relevance checked, Proceeding with the the query...+I want to book a flight to Paris and stay in a hotel with a pool.
+2025-01-15 20:18:52 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2025-01-15 20:18:52 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 20:18:52 - INFO - relevance checked, Proceeding with the the query...+I want to book a flight to Paris and stay in a hotel with a pool.
+2025-01-15 20:24:00 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2025-01-15 20:24:01 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 20:24:01 - INFO - relevance checked, Proceeding with the the query...+I want to book a flight to Paris and stay in a hotel with a pool.
+2025-01-15 20:24:37 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2025-01-15 20:24:37 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 20:24:37 - INFO - relevance checked, Proceeding with the the query...+I want to book a flight to Paris and stay in a hotel with a pool.
+2025-01-15 20:26:32 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2025-01-15 20:26:32 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 20:26:32 - INFO - relevance checked, Proceeding with the the query...+I want to book a flight to Paris and stay in a hotel with a pool.
+2025-01-15 20:27:20 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2025-01-15 20:27:22 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 20:27:22 - INFO - relevance checked, Proceeding with the the query...+I want to book a flight to Paris and stay in a hotel with a pool.
+2025-01-15 20:28:56 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2025-01-15 20:28:56 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 20:28:56 - INFO - relevance checked, Proceeding with the the query...+I want to book a flight to Paris and stay in a hotel with a pool.
+2025-01-15 20:28:57 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-15 20:28:57 - INFO - Prepopulated preferences: {'destination': 'Paris', 'accommodation': {'amenities': ['pool'], 'budget': 'mid-range', 'preferred_locations': ['city center'], 'preferred_ratings': [4, 5]}, 'flight': {'preferred_airports': ['CDG', 'ORY'], 'preferred_times': ['morning', 'afternoon']}}
+2025-01-15 20:28:57 - INFO - Asking for missing information
+2025-01-15 20:28:57 - INFO - Asking user for clarification: What's your budget for the trip?
+2025-01-17 16:28:58 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2025-01-17 16:29:00 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-17 16:29:00 - INFO - relevance checked, Proceeding with the the query...+I want to book a flight to Paris and stay in a hotel with a pool.
+2025-01-17 16:29:00 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-17 16:29:00 - INFO - Prepopulated preferences: {'destination': 'Paris', 'accommodation': {'amenities': ['pool'], 'budget': 'medium-high'}, 'flightPreferences': {'preferredAirports': ['CDG', 'ORY'], 'flightTime': 'flexible'}}
+2025-01-17 16:29:00 - INFO - Asking for missing information
+2025-01-17 16:29:00 - INFO - Asking user for clarification: What's your budget for the trip?
+2025-01-17 16:29:08 - INFO - User response: 1000
+2025-01-17 16:29:08 - INFO - User provided value for budget: 1000
+2025-01-17 16:29:08 - INFO - Asking user for clarification: Which airport would you prefer to depart from?
+2025-01-17 16:29:18 - INFO - User response: YVR
+2025-01-17 16:29:18 - INFO - User provided value for preferred_airports: YVR
+2025-01-17 16:29:18 - INFO - Asking user for clarification: What time of the day should the flight be (morning, afternoon, evening)?
+2025-01-17 16:29:26 - INFO - User response: any time is ok
+2025-01-17 16:29:26 - INFO - User provided value for flight_time: any time is ok
+2025-01-17 16:29:26 - INFO - Asking user for clarification: What's the minimum acceptable rating (out of 5)?
+2025-01-17 16:29:42 - INFO - User response: 4
+2025-01-17 16:29:42 - INFO - User provided value for rating: 4
+2025-01-17 16:29:42 - INFO - Asking user for clarification: What type of accommodation are you looking for (e.g., hotel, resort)?
+2025-01-17 16:29:56 - INFO - User response: resort
+2025-01-17 16:29:56 - INFO - User provided value for accommodation_type: resort
+2025-01-17 16:29:56 - INFO - Asking user for clarification: Any specific amenities you'd like (e.g., wifi, pool)?
+2025-01-17 16:30:03 - INFO - User response: wifi and pool
+2025-01-17 16:30:03 - INFO - User provided value for amenities: ['wifi and pool']
+2025-01-17 16:30:03 - INFO - Completed asking for missing information
+2025-01-17 16:30:05 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-17 16:39:31 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2025-01-17 16:39:32 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-17 16:39:32 - INFO - relevance checked, Proceeding with the the query...+I want to book a flight to Paris and stay in a hotel with a pool.
+2025-01-17 16:39:33 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-17 16:39:33 - INFO - Prepopulated preferences: {'destination': 'Paris', 'hotel_preferences': {'amenities': ['pool'], 'budget': 'mid-range', 'stay_duration': '5 nights', 'star_rating': '4 stars'}, 'flight_preferences': {'departure_airport': 'JFK', 'arrival_airport': 'CDG', 'flight_time': {'departure_time': 'morning', 'return_time': 'evening'}, 'budget': 'flexible'}}
+2025-01-17 16:39:33 - INFO - Asking for missing information
+2025-01-17 16:39:33 - INFO - Asking user for clarification: What's your budget for the trip?
+2025-01-17 16:39:39 - INFO - User response: 10000
+2025-01-17 16:39:39 - INFO - User provided value for budget: 10000
+2025-01-17 16:39:39 - INFO - Asking user for clarification: Which airport would you prefer to depart from?
+2025-01-17 16:39:42 - INFO - User response: yvr
+2025-01-17 16:39:42 - INFO - User provided value for preferred_airports: yvr
+2025-01-17 16:39:42 - INFO - Asking user for clarification: What time of the day should the flight be (morning, afternoon, evening)?
+2025-01-17 16:39:49 - INFO - User response: all times
+2025-01-17 16:39:49 - INFO - User provided value for flight_time: all times
+2025-01-17 16:39:49 - INFO - Asking user for clarification: What's the minimum acceptable rating (out of 5)?
+2025-01-17 16:39:51 - INFO - User response: 4
+2025-01-17 16:39:51 - INFO - User provided value for rating: 4
+2025-01-17 16:39:51 - INFO - Asking user for clarification: What type of accommodation are you looking for (e.g., hotel, resort)?
+2025-01-17 16:39:55 - INFO - User response: hotel
+2025-01-17 16:39:55 - INFO - User provided value for accommodation_type: hotel
+2025-01-17 16:39:55 - INFO - Asking user for clarification: Any specific amenities you'd like (e.g., wifi, pool)?
+2025-01-17 16:40:02 - INFO - User response: pool, wifi
+2025-01-17 16:40:02 - INFO - User provided value for amenities: ['pool', 'wifi']
+2025-01-17 16:40:02 - INFO - Completed asking for missing information
+2025-01-17 16:40:04 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-17 16:40:04 - INFO - search_internet: context=I want to book a flight to Paris and stay in a hotel with a pool., query="flights from JFK to CDG in the morning" , max_pages=5
+2025-01-17 16:40:05 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=%22flights%20from%20JFK%20to%20CDG%20in%20the%20morning%22%20&offset=1 "HTTP/1.1 200 OK"
+2025-01-17 16:40:05 - WARNING - No search results found on page 0
+2025-01-17 16:40:05 - WARNING - No relevant search results found.
+2025-01-17 16:40:05 - INFO - search_internet
+2025-01-17 16:40:11 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-17 16:40:11 - INFO - search_internet: context=I want to book a flight to Paris and stay in a hotel with a pool., query="flights from JFK to CDG" , max_pages=5
+2025-01-17 16:40:12 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=%22flights%20from%20JFK%20to%20CDG%22%20&offset=1 "HTTP/1.1 200 OK"
+2025-01-17 16:40:13 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=%22flights%20from%20JFK%20to%20CDG%22%20&offset=11 "HTTP/1.1 200 OK"
+2025-01-17 16:40:13 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=%22flights%20from%20JFK%20to%20CDG%22%20&offset=21 "HTTP/1.1 200 OK"
+2025-01-17 16:40:14 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=%22flights%20from%20JFK%20to%20CDG%22%20&offset=31 "HTTP/1.1 200 OK"
+2025-01-17 16:40:14 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=%22flights%20from%20JFK%20to%20CDG%22%20&offset=41 "HTTP/1.1 200 OK"
+2025-01-17 16:40:14 - INFO - Ranking snippets
+2025-01-17 16:41:14 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2025-01-17 16:41:15 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-17 16:41:15 - INFO - relevance checked, Proceeding with the the query...+I want to book a flight to Paris and stay in a hotel with a pool.
+2025-01-17 16:41:16 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-17 16:41:16 - INFO - Prepopulated preferences: {'travelPreferences': {'destination': 'Paris', 'hotelAmenities': ['pool'], 'budget': 'medium', 'preferredAirports': ['CDG'], 'flightTimePreferences': {'departureTime': 'morning', 'arrivalTime': 'evening'}}}
+2025-01-17 16:41:16 - INFO - Asking for missing information
+2025-01-17 16:41:16 - INFO - Asking user for clarification: What's your budget for the trip?
+2025-01-17 16:41:23 - INFO - User response: 1000
+2025-01-17 16:41:23 - INFO - User provided value for budget: 1000
+2025-01-17 16:41:23 - INFO - Asking user for clarification: Which airport would you prefer to depart from?
+2025-01-17 16:41:28 - INFO - User response: yvr
+2025-01-17 16:41:28 - INFO - User provided value for preferred_airports: yvr
+2025-01-17 16:41:28 - INFO - Asking user for clarification: What time of the day should the flight be (morning, afternoon, evening)?
+2025-01-17 16:41:31 - INFO - User response: all times
+2025-01-17 16:41:31 - INFO - User provided value for flight_time: all times
+2025-01-17 16:41:31 - INFO - Asking user for clarification: What's the minimum acceptable rating (out of 5)?
+2025-01-17 16:41:36 - INFO - User response: 4
+2025-01-17 16:41:36 - INFO - User provided value for rating: 4
+2025-01-17 16:41:36 - INFO - Asking user for clarification: What type of accommodation are you looking for (e.g., hotel, resort)?
+2025-01-17 16:41:53 - INFO - User response: resort
+2025-01-17 16:41:53 - INFO - User provided value for accommodation_type: resort
+2025-01-17 16:41:53 - INFO - Asking user for clarification: Any specific amenities you'd like (e.g., wifi, pool)?
+2025-01-17 16:41:56 - INFO - User response: wifi
+2025-01-17 16:41:56 - INFO - User provided value for amenities: ['wifi']
+2025-01-17 16:41:56 - INFO - Completed asking for missing information
+2025-01-17 16:41:58 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-17 16:41:58 - INFO - search_internet: context=I want to book a flight to Paris and stay in a hotel with a pool., query="flights from YVR to CDG in the morning arriving in the evening", max_pages=5
+2025-01-17 16:41:59 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=%22flights%20from%20YVR%20to%20CDG%20in%20the%20morning%20arriving%20in%20the%20evening%22&offset=1 "HTTP/1.1 200 OK"
+2025-01-17 16:41:59 - WARNING - No search results found on page 0
+2025-01-17 16:41:59 - WARNING - No relevant search results found.
+2025-01-17 16:41:59 - INFO - search_internet
+2025-01-17 16:42:00 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-17 16:42:00 - INFO - search_internet: context=I want to book a flight to Paris and stay in a hotel with a pool., query="flights from YVR to Paris", max_pages=5
+2025-01-17 16:42:01 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=%22flights%20from%20YVR%20to%20Paris%22&offset=1 "HTTP/1.1 200 OK"
+2025-01-17 16:42:02 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=%22flights%20from%20YVR%20to%20Paris%22&offset=11 "HTTP/1.1 200 OK"
+2025-01-17 16:42:02 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=%22flights%20from%20YVR%20to%20Paris%22&offset=21 "HTTP/1.1 200 OK"
+2025-01-17 16:42:03 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=%22flights%20from%20YVR%20to%20Paris%22&offset=31 "HTTP/1.1 200 OK"
+2025-01-17 16:42:03 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=%22flights%20from%20YVR%20to%20Paris%22&offset=41 "HTTP/1.1 200 OK"
+2025-01-17 16:42:03 - INFO - Ranking snippets
+2025-01-17 16:42:18 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-17 16:42:18 - INFO - Summarizing content
+2025-01-17 16:42:18 - INFO - Summarizing text: Here are the snippets ranked based on their relevance to the query about booking a flight to Paris and staying in a hotel with a pool:
+
+1. **Cheap Flights from Vancouver (YVR) to Paris (CDG) start at $200 for one-way and $366 for round trip. Earn your airline miles on top of our rewards!** - Directly addresses the desire to book a flight to Paris.
+
+2. **Find the best deals on flights from Vancouver International (YVR) to Paris Charles de Gaulle (CDG). Compare prices from hundreds of major travel agents and airlines, all in one search.** - Provides information about comparing flight deals.
+
+3. **Looking for flights from Vancouver (YVR) to Paris (CDG)? Fly Air Canada, voted "Best Airline in North America" by Skytrax and Global Traveler Magazine. Book your Vancouver to Paris flight today.** - Invites booking of a flight, with a reputable airline recommendation.
+
+4. **Planning a trip to Paris? Find flight deals to Paris (CDG) with Air Canada, certified with a four-star ranking by Skytrax. Find the best offers and book today!** - Encourages booking and highlights a specific airline.
+
+5. **Find cheap flights from Vancouver to Paris from C$ 287. Search the best prices round-trip for Icelandair, WestJet, Air France from 300+ websites. Get real-time pricing on Vancouver to Paris airfare in seconds on Cheapflights.ca today.** - Offers various airline options and emphasizes searching for prices, which may assist in booking.
+
+6. **Vancouver to Paris flights. There are over 21 airlines and as many as 757 flights every week to this destination. You can fly non-stop to Paris (CDG) from Vancouver (YVR) with Air France...** - Provides general information about the flights available, implying options for potential travels.
+
+7. **Find your cheap round-trip flight Vancouver Paris with Air France at CAD 892. Discover our selection of cheapest return flights to Paris from Vancouver.** - Specific mention of a flight deal, which may influence booking decisions.
+
+8. **Search for one-way flight options from Vancouver Intl to Paris specifically provided by Air Transat. Find affordable one-way fares from Air Transat and compare prices with other airlines.** - Addresses flight booking needs but is a bit more focused on one-way flights, which may not align perfectly with round-trip intents.
+
+9. **Direct flights from Vancouver to Paris. All flights from YVR to CDG non-stop. There are direct flights from Vancouver International Airport, Canada to Charles De Gaulle (CDG), France...** - Specifies the availability of direct flights, providing useful information for travelers.
+
+10. **Our data shows that the cheapest route for a return flight from Vancouver Intl Airport to Paris cost C$ 801 and was between Vancouver Intl Airport (YVR) and Paris Charles de Gaulle Airport (CDG)...** - Provides average cost data but is less directly actionable for booking.
+
+The remaining snippets mostly pertain to other topics such as flights from Paris to Vancouver, general travel tips, or destinations, which are less relevant to the specified query about booking a flight to Paris.
+2025-01-17 16:42:18 - INFO - Prompt: Please summarize the following content: Here are the snippets ranked based on their relevance to the query about booking a flight to Paris and staying in a hotel with a pool:
+
+1. **Cheap Flights from Vancouver (YVR) to Paris (CDG) start at $200 for one-way and $366 for round trip. Earn your airline miles on top of our rewards!** - Directly addresses the desire to book a flight to Paris.
+
+2. **Find the best deals on flights from Vancouver International (YVR) to Paris Charles de Gaulle (CDG). Compare prices from hundreds of major travel agents and airlines, all in one search.** - Provides information about comparing flight deals.
+
+3. **Looking for flights from Vancouver (YVR) to Paris (CDG)? Fly Air Canada, voted "Best Airline in North America" by Skytrax and Global Traveler Magazine. Book your Vancouver to Paris flight today.** - Invites booking of a flight, with a reputable airline recommendation.
+
+4. **Planning a trip to Paris? Find flight deals to Paris (CDG) with Air Canada, certified with a four-star ranking by Skytrax. Find the best offers and book today!** - Encourages booking and highlights a specific airline.
+
+5. **Find cheap flights from Vancouver to Paris from C$ 287. Search the best prices round-trip for Icelandair, WestJet, Air France from 300+ websites. Get real-time pricing on Vancouver to Paris airfare in seconds on Cheapflights.ca today.** - Offers various airline options and emphasizes searching for prices, which may assist in booking.
+
+6. **Vancouver to Paris flights. There are over 21 airlines and as many as 757 flights every week to this destination. You can fly non-stop to Paris (CDG) from Vancouver (YVR) with Air France...** - Provides general information about the flights available, implying options for potential travels.
+
+7. **Find your cheap round-trip flight Vancouver Paris with Air France at CAD 892. Discover our selection of cheapest return flights to Paris from Vancouver.** - Specific mention of a flight deal, which may influence booking decisions.
+
+8. **Search for one-way flight options from Vancouver Intl to Paris specifically provided by Air Transat. Find affordable one-way fares from Air Transat and compare prices with other airlines.** - Addresses flight booking needs but is a bit more focused on one-way flights, which may not align perfectly with round-trip intents.
+
+9. **Direct flights from Vancouver to Paris. All flights from YVR to CDG non-stop. There are direct flights from Vancouver International Airport, Canada to Charles De Gaulle (CDG), France...** - Specifies the availability of direct flights, providing useful information for travelers.
+
+10. **Our data shows that the cheapest route for a return flight from Vancouver Intl Airport to Paris cost C$ 801 and was between Vancouver Intl Airport (YVR) and Paris Charles de Gaulle Airport (CDG)...** - Provides average cost data but is less directly actionable for booking.
+
+The remaining snippets mostly pertain to other topics such as flights from Paris to Vancouver, general travel tips, or destinations, which are less relevant to the specified query about booking a flight to Paris. appropriately for the following context query: I want to book a flight to Paris and stay in a hotel with a pool.
+2025-01-17 16:42:22 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-17 16:42:22 - INFO - Summary: The content outlines several snippets relevant to booking a flight from Vancouver (YVR) to Paris (CDG) while planning for a hotel stay with a pool. Here’s a summary of the most pertinent points:
+
+1. **Flight Deals**: Flights from Vancouver to Paris start at approximately $200 for one-way and $366 for round-trip tickets. Users can compare prices from various airlines to find the best deal.
+
+2. **Airlines Recommendation**: Air Canada is recommended as a reputable option, having received accolades from Skytrax and Global Traveler Magazine.
+
+3. **Direct Flights**: There are numerous airlines offering direct flights from Vancouver to Paris, with over 21 airlines providing up to 757 flights weekly.
+
+4. **Price Comparisons**: Users can search and compare flight prices across more than 300 websites, facilitating informed booking decisions.
+
+5. **Specific Offers**: There are specific flight deals mentioned, such as round trips on Air France and one-way flights from Air Transat.
+
+Overall, the information is primarily focused on flight bookings to Paris, with no specific details about hotel accommodations with pools in the snippets provided.
+2025-01-17 16:42:22 - INFO - search_internet
+2025-01-17 16:42:25 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-17 16:42:25 - ERROR - No valid actions found in bot response.
+2025-01-17 16:44:00 - INFO - Processing query: I want to book a flight to Paris and stay in a hotel with a pool.
+2025-01-17 16:44:01 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-17 16:44:01 - INFO - relevance checked, Proceeding with the the query...+I want to book a flight to Paris and stay in a hotel with a pool.
+2025-01-17 16:44:02 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-17 16:44:02 - INFO - Prepopulated preferences: {'destination': 'Paris', 'accommodation': {'amenities': ['pool']}, 'travelPreferences': {'budget': '$$', 'preferredAirports': ['CDG', 'ORY'], 'flightTimePreferences': {'departureTime': 'morning', 'returnTime': 'evening'}}}
+2025-01-17 16:44:02 - INFO - Asking for missing information
+2025-01-17 16:44:02 - INFO - Asking user for clarification: What's your budget for the trip?
+2025-01-17 16:44:12 - INFO - User response: 10000
+2025-01-17 16:44:12 - INFO - User provided value for budget: 10000
+2025-01-17 16:44:12 - INFO - Asking user for clarification: Which airport would you prefer to depart from?
+2025-01-17 16:44:36 - INFO - User response: yvr
+2025-01-17 16:44:36 - INFO - User provided value for preferred_airports: yvr
+2025-01-17 16:44:36 - INFO - Asking user for clarification: What time of the day should the flight be (morning, afternoon, evening)?
+2025-01-17 16:44:51 - INFO - User response: all times
+2025-01-17 16:44:51 - INFO - User provided value for flight_time: all times
+2025-01-17 16:44:51 - INFO - Asking user for clarification: What's the minimum acceptable rating (out of 5)?
+2025-01-17 16:44:56 - INFO - User response: 4
+2025-01-17 16:44:56 - INFO - User provided value for rating: 4
+2025-01-17 16:44:56 - INFO - Asking user for clarification: What type of accommodation are you looking for (e.g., hotel, resort)?
+2025-01-17 16:45:09 - INFO - User response: hotel
+2025-01-17 16:45:09 - INFO - User provided value for accommodation_type: hotel
+2025-01-17 16:45:09 - INFO - Asking user for clarification: Any specific amenities you'd like (e.g., wifi, pool)?
+2025-01-17 16:45:15 - INFO - User response: wifi
+2025-01-17 16:45:15 - INFO - User provided value for amenities: ['wifi']
+2025-01-17 16:45:15 - INFO - Completed asking for missing information
+2025-01-17 16:45:18 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-17 16:45:18 - INFO - search_internet: context=I want to book a flight to Paris and stay in a hotel with a pool., query="flights from YVR to Paris CDG ORY morning departure evening return" , max_pages=5
+2025-01-17 16:45:18 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=%22flights%20from%20YVR%20to%20Paris%20CDG%20ORY%20morning%20departure%20evening%20return%22%20&offset=1 "HTTP/1.1 200 OK"
+2025-01-17 16:45:18 - WARNING - No search results found on page 0
+2025-01-17 16:45:18 - WARNING - No relevant search results found.
+2025-01-17 16:45:18 - INFO - search_internet
+2025-01-17 16:45:20 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-17 16:45:20 - INFO - search_internet: context=I want to book a flight to Paris and stay in a hotel with a pool., query="flights from YVR to Paris" , max_pages=5
+2025-01-17 16:45:21 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=%22flights%20from%20YVR%20to%20Paris%22%20&offset=1 "HTTP/1.1 200 OK"
+2025-01-17 16:45:21 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=%22flights%20from%20YVR%20to%20Paris%22%20&offset=11 "HTTP/1.1 200 OK"
+2025-01-17 16:45:22 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=%22flights%20from%20YVR%20to%20Paris%22%20&offset=21 "HTTP/1.1 200 OK"
+2025-01-17 16:45:23 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=%22flights%20from%20YVR%20to%20Paris%22%20&offset=31 "HTTP/1.1 200 OK"
+2025-01-17 16:45:23 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=%22flights%20from%20YVR%20to%20Paris%22%20&offset=41 "HTTP/1.1 200 OK"
+2025-01-17 16:45:23 - WARNING - No search results found on page 4
+2025-01-17 16:45:23 - INFO - Ranking snippets
+2025-01-17 16:45:40 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-17 16:45:40 - INFO - Summarizing content
+2025-01-17 16:45:40 - INFO - Summarizing text: To rank the snippets based on their relevance to booking a flight to Paris, I focused on the direct information about flights from Vancouver to Paris and any pricing or airline information, since the context query specifically mentions booking a flight. Information about hotels or pools isn't directly addressed, so those snippets with relevant flight details will be prioritized. Here's the ranking:
+
+1. **Looking for flights from Vancouver (YVR) to Paris (CDG)? Fly Air Canada, voted "Best Airline in North America" by Skytrax and Global Traveler Magazine. Book your Vancouver to Paris flight today.**
+2. **Paris. C$499 per passenger. Departing Wed, Jan 29, returning Thu, Feb 13. Round-trip flight with WestJet. Outbound indirect flight with WestJet, departing from Vancouver International on Wed, Jan 29, arriving in Paris Charles de Gaulle.**
+3. **Find flights to Paris from $393. Fly from Vancouver on Icelandair, WestJet, Porter Airlines and more. Search for Paris flights on KAYAK now to find the best deal.**
+4. **Vancouver to Paris flights. There are over 21 airlines and as many as 757 flights every week to this destination. You can fly non-stop to Paris (CDG) from Vancouver (YVR) with Air France but if a stopover option suits you better you can choose to fly via Reykjavik, Ottawa or any other of the 20 alternatives with flight connections. Vancouver to Paris with Air France.**
+5. **Our data shows that the cheapest route for a return flight from Vancouver Intl Airport to Paris cost C$ 801 and was between Vancouver Intl Airport (YVR) and Paris Charles de Gaulle Airport (CDG).On average, the best prices are found if you fly this route.**
+6. **Find the best flights and travel deals from Vancouver to Paris. We know your time is precious. With KLM you know you can make the most of it!**
+7. **Find the best deals on flights from Vancouver International (YVR) to Paris (PARI). Compare prices from hundreds of major travel agents and airlines, all in one search.**
+8. **Cheap Flights from Vancouver (YVR) to Paris (ORY) start at CA $1,062 for one-way and CA $774 for round trip. Earn your airline miles on top of our rewards!**
+9. **Find cheap flights from Vancouver to Paris from C$ 287. Search the best prices round-trip for Icelandair, WestJet, Air France from 300+ websites. Get real-time pricing on Vancouver to Paris airfare in seconds on Cheapflights.ca today.**
+10. **Detailed flight information from Vancouver YVR to Paris CDG. See all airline(s) with scheduled flights and weekly timetables up to 9 months ahead. Flight numbers and complete route information.**
+
+The remaining snippets that discuss attractions in Paris, flight schedules without specific airfare, or details about flights to Paris from other locations are less relevant to the immediate need of booking a flight from Vancouver to Paris, so they are ranked lower.
+2025-01-17 16:45:40 - INFO - Prompt: Please summarize the following content: To rank the snippets based on their relevance to booking a flight to Paris, I focused on the direct information about flights from Vancouver to Paris and any pricing or airline information, since the context query specifically mentions booking a flight. Information about hotels or pools isn't directly addressed, so those snippets with relevant flight details will be prioritized. Here's the ranking:
+
+1. **Looking for flights from Vancouver (YVR) to Paris (CDG)? Fly Air Canada, voted "Best Airline in North America" by Skytrax and Global Traveler Magazine. Book your Vancouver to Paris flight today.**
+2. **Paris. C$499 per passenger. Departing Wed, Jan 29, returning Thu, Feb 13. Round-trip flight with WestJet. Outbound indirect flight with WestJet, departing from Vancouver International on Wed, Jan 29, arriving in Paris Charles de Gaulle.**
+3. **Find flights to Paris from $393. Fly from Vancouver on Icelandair, WestJet, Porter Airlines and more. Search for Paris flights on KAYAK now to find the best deal.**
+4. **Vancouver to Paris flights. There are over 21 airlines and as many as 757 flights every week to this destination. You can fly non-stop to Paris (CDG) from Vancouver (YVR) with Air France but if a stopover option suits you better you can choose to fly via Reykjavik, Ottawa or any other of the 20 alternatives with flight connections. Vancouver to Paris with Air France.**
+5. **Our data shows that the cheapest route for a return flight from Vancouver Intl Airport to Paris cost C$ 801 and was between Vancouver Intl Airport (YVR) and Paris Charles de Gaulle Airport (CDG).On average, the best prices are found if you fly this route.**
+6. **Find the best flights and travel deals from Vancouver to Paris. We know your time is precious. With KLM you know you can make the most of it!**
+7. **Find the best deals on flights from Vancouver International (YVR) to Paris (PARI). Compare prices from hundreds of major travel agents and airlines, all in one search.**
+8. **Cheap Flights from Vancouver (YVR) to Paris (ORY) start at CA $1,062 for one-way and CA $774 for round trip. Earn your airline miles on top of our rewards!**
+9. **Find cheap flights from Vancouver to Paris from C$ 287. Search the best prices round-trip for Icelandair, WestJet, Air France from 300+ websites. Get real-time pricing on Vancouver to Paris airfare in seconds on Cheapflights.ca today.**
+10. **Detailed flight information from Vancouver YVR to Paris CDG. See all airline(s) with scheduled flights and weekly timetables up to 9 months ahead. Flight numbers and complete route information.**
+
+The remaining snippets that discuss attractions in Paris, flight schedules without specific airfare, or details about flights to Paris from other locations are less relevant to the immediate need of booking a flight from Vancouver to Paris, so they are ranked lower. appropriately for the following context query: I want to book a flight to Paris and stay in a hotel with a pool.
+2025-01-17 16:45:46 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-17 16:45:46 - INFO - Summary: The content outlines a ranking of snippets related to booking a flight from Vancouver to Paris, prioritizing those with direct flight and pricing information. The rankings are as follows:
+
+1. Air Canada offers flights from Vancouver to Paris, marked as the best airline in North America.
+2. A round-trip WestJet flight priced at C$499 for specific dates.
+3. A search for flights to Paris from $393 with various airlines, highlighting KAYAK for deals.
+4. Information on over 21 airlines with options for non-stop flights and connections, specifically mentioning Air France.
+5. Data indicating the cheapest return flight route costing C$801, listing average prices.
+6. General travel deals from Vancouver to Paris, promoting KLM.
+7. Comparisons of flight prices from multiple travel agents for Vancouver to Paris.
+8. One-way and round-trip flight prices starting at CA $1,062.
+9. Cheap flights from C$287 for various airlines, available through Cheapflights.ca.
+10. Detailed flight information and schedules for future planning from Vancouver to Paris.
+
+Snippets discussing unrelated topics, such as Paris attractions or general flight schedules without specific fare details, are ranked lower as they don't meet the immediate context of booking a flight.
+2025-01-17 16:45:46 - INFO - search_internet
+2025-01-17 16:45:48 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-17 16:45:48 - INFO - search_internet: context=I want to book a flight to Paris and stay in a hotel with a pool., query="hotels in Paris with pool and wifi rating 4" , max_pages=5
+2025-01-17 16:45:48 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=%22hotels%20in%20Paris%20with%20pool%20and%20wifi%20rating%204%22%20&offset=1 "HTTP/1.1 200 OK"
+2025-01-17 16:45:48 - WARNING - No search results found on page 0
+2025-01-17 16:45:48 - WARNING - No relevant search results found.
+2025-01-17 16:45:48 - INFO - search_internet
+2025-01-17 16:45:50 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-17 16:45:50 - INFO - search_internet: context=I want to book a flight to Paris and stay in a hotel with a pool., query="hotels in Paris with pool rating 4" , max_pages=5
+2025-01-17 16:45:51 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=%22hotels%20in%20Paris%20with%20pool%20rating%204%22%20&offset=1 "HTTP/1.1 200 OK"
+2025-01-17 16:45:51 - WARNING - No search results found on page 0
+2025-01-17 16:45:51 - WARNING - No relevant search results found.
+2025-01-17 16:45:51 - INFO - search_internet
+2025-01-17 16:45:53 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-17 16:45:53 - INFO - search_internet: context=I want to book a flight to Paris and stay in a hotel with a pool., query="popular hotels in Paris with pool" , max_pages=5
+2025-01-17 16:45:54 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=%22popular%20hotels%20in%20Paris%20with%20pool%22%20&offset=1 "HTTP/1.1 200 OK"
+2025-01-17 16:45:54 - WARNING - No search results found on page 0
+2025-01-17 16:45:54 - WARNING - No relevant search results found.
+2025-01-17 16:45:54 - INFO - search_internet
+2025-01-19 13:35:07 - ERROR - Failed to determine query relevance: ChatBot.__init__() got an unexpected keyword argument 'system'
+2025-01-19 13:35:21 - ERROR - Failed to determine query relevance: ChatBot.__init__() got an unexpected keyword argument 'system'
+2025-01-19 13:35:40 - ERROR - Failed to determine query relevance: ChatBot.__init__() got an unexpected keyword argument 'system'
+2025-01-19 13:37:04 - ERROR - Failed to determine query relevance: ChatBot.__init__() got an unexpected keyword argument 'system'
+2025-01-19 13:39:56 - ERROR - Failed to determine query relevance: ChatBot.__init__() got an unexpected keyword argument 'system'
+2025-01-19 13:49:46 - ERROR - Failed to determine query relevance: ChatBot.__init__() got an unexpected keyword argument 'system'
+2025-01-19 13:52:34 - ERROR - Failed to determine query relevance: Error executing OpenAI API call
+2025-01-19 14:07:36 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:07:37 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:07:37 - INFO - Prepopulated preferences: {'travel_preferences': {'budget': 'Enter your budget range', 'preferred_airports': ['List your preferred airports (e.g. JFK, LAX, ORD)'], 'flight_time_preferences': ['Morning', 'Afternoon', 'Evening', 'Night']}}
+2025-01-19 14:07:37 - INFO - Asking for missing information
+2025-01-19 14:07:37 - INFO - Asking user for clarification: What's your budget for the trip?
+2025-01-19 14:09:37 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:09:38 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:09:38 - INFO - Prepopulated preferences: {'travel_preferences': {'budget': '$1000', 'preferred_airports': ['JFK', 'LAX'], 'flight_time_preferences': {'departure_time': 'Morning', 'arrival_time': 'Evening'}}}
+2025-01-19 14:09:39 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:09:39 - INFO - Asking user for clarification: What specific topic or question would you like me to explore and summarize for you?
+2025-01-19 14:10:13 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:10:14 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:10:14 - INFO - Prepopulated preferences: {'travelPreferences': {'budget': 1000, 'preferredAirports': ['JFK', 'LAX'], 'flightTimePreferences': {'departureTime': 'morning', 'arrivalTime': 'evening'}}}
+2025-01-19 14:10:14 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:10:14 - INFO - Asking user for clarification: What specific information are you seeking?
+2025-01-19 14:21:23 - INFO - User response: 
+2025-01-19 14:21:23 - INFO - User response: 
+2025-01-19 14:21:24 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:21:24 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:21:24 - INFO - Asking user for clarification: How can I help you today?
+2025-01-19 14:21:24 - INFO - Asking user for clarification: Please provide me with the specific topic or question you would like me to explore and summarize for you.
+2025-01-19 14:21:28 - INFO - User response: 
+2025-01-19 14:21:37 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:21:40 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:21:40 - INFO - Prepopulated preferences: {}
+2025-01-19 14:21:42 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:21:42 - INFO - Asking user for clarification: Please provide your budget, preferred airports, flight time, rating, accommodation type, and any specific amenities you are looking for in your flight booking.
+2025-01-19 14:25:18 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:25:23 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:25:23 - INFO - Prepopulated preferences: {}
+2025-01-19 14:25:25 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:25:25 - INFO - Asking user for clarification: Please provide your budget, preferred airports, desired flight time, rating preferences, accommodation type, and any specific amenities you are looking for.
+2025-01-19 14:25:28 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:25:30 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:25:30 - INFO - Prepopulated preferences: {}
+2025-01-19 14:25:32 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:25:32 - INFO - Asking user for clarification: Please provide your budget, preferred airports, flight time, rating, accommodation type, and any specific amenities you are looking for in your flight booking.
+2025-01-23 18:35:48 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:35:50 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:35:50 - INFO - Prepopulated preferences: {}
+2025-01-23 18:35:52 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:35:52 - INFO - Asking user for clarification: Please provide your budget, preferred airports, desired flight time, rating preferences, accommodation type, and any specific amenities you are looking for.
+2025-01-23 18:36:00 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:36:06 - INFO - User response: dsd
+2025-01-23 18:36:07 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:36:07 - INFO - Prepopulated preferences: {}
+2025-01-23 18:36:08 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:36:08 - INFO - Asking user for clarification: Could you please clarify your preferences for booking a flight? Specifically, I need details about your budget, preferred airports, desired flight time, rating preferences, accommodation type, and any specific amenities you are looking for.
+2025-01-23 18:36:08 - INFO - User response: ds
+2025-01-23 18:36:09 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:36:09 - INFO - Asking user for clarification: Please provide your budget, preferred airports, flight time, rating, accommodation type, and any specific amenities you are looking for in your flight booking.
+2025-01-23 18:36:09 - INFO - User response: ds
+2025-01-23 18:36:11 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:36:11 - INFO - Asking user for clarification: Could you please provide your flight preferences? Specifically, I need to know: 
+2025-01-23 18:36:11 - INFO - User response: ds
+2025-01-23 18:36:12 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:36:12 - INFO - Asking user for clarification: Could you please clarify what "ds" means or provide more specific details regarding your budget, preferred airports, flight time, rating, accommodation type, and amenities for your flight booking?
+2025-01-23 18:36:12 - INFO - User response: ds
+2025-01-23 18:36:13 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:36:13 - INFO - Asking user for clarification: It seems I'm not getting the information I need. Could you please let me know if you have any specific preferences for your flight? If you're unsure, feel free to ask for help or guidance on what information I need to assist you.
+2025-01-23 18:36:13 - INFO - User response: ds
+2025-01-23 18:36:14 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:36:14 - INFO - Asking user for clarification: It seems like there might be a misunderstanding. Could you please provide specific details about your flight preferences, such as your budget, preferred airports, flight time, rating, accommodation type, and any amenities you are looking for?
+2025-01-23 18:36:14 - INFO - User response: ds
+2025-01-23 18:36:16 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:36:16 - INFO - Asking user for clarification: It seems there might be some confusion. Could you please tell me your budget for the flight or your preferred departure airport? Just one or two details would really help!
+2025-01-23 18:36:16 - INFO - User response: ds
+2025-01-23 18:36:16 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:36:16 - INFO - Asking user for clarification: I understand that it might be difficult to provide your preferences. Could you please let me know if you have any specific details in mind for your flight? For example, you could tell me:
+2025-01-23 18:36:16 - INFO - User response: ds
+2025-01-23 18:36:18 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:36:18 - INFO - Asking user for clarification: To help you better, could you please provide just one detail? For example, what is your budget for the flight? Or if you have a preferred airport, that would be helpful too!
+2025-01-23 18:36:18 - INFO - User response: ds
+2025-01-23 18:37:09 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:37:12 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:37:12 - INFO - Prepopulated preferences: {}
+2025-01-23 18:37:14 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:37:14 - INFO - Asking user for clarification: Please provide more details about your flight preferences, such as your budget, preferred airports, desired flight time, any specific airline ratings you prefer, accommodation type, and any amenities you would like on the flight.
+2025-01-23 18:37:14 - INFO - User response: ds
+2025-01-23 18:37:15 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:37:15 - INFO - Asking user for clarification: Could you please clarify your flight preferences? Specifically, I need to know your budget, preferred airports, desired flight time, any airline ratings you prefer, accommodation type, and any amenities you would like on the flight.
+2025-01-23 18:37:15 - INFO - User response: ds
+2025-01-23 18:37:18 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:37:18 - INFO - Asking user for clarification: It seems like I didn't get the information I need. Could you please provide specific details about your flight preferences? For example, you could mention your budget (e.g., under $500), preferred airports (e.g., JFK or LAX), desired flight time (e.g., morning or evening), any airline ratings you prefer (e.g., 4 stars or above), accommodation type (e.g., economy or business class), and any amenities you would like (e.g., Wi-Fi, meals).
+2025-01-23 18:37:18 - INFO - User response: ds
+2025-01-23 18:37:20 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:37:20 - INFO - Asking user for clarification: It seems I'm still not getting the information I need. Could you please provide your flight preferences in a more structured way? For example, you could answer with something like this: "Budget: $300, Preferred Airports: LAX, Flight Time: Morning, Rating: 4 stars, Accommodation Type: Economy, Amenities: Wi-Fi, Meals." This will help me assist you better.
+2025-01-23 18:37:20 - INFO - User response: yvr
+2025-01-23 18:37:23 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:37:23 - INFO - Asking user for clarification: Thank you for providing "yvr" as your preferred airport. Could you please share more details about your flight preferences? Specifically, I need to know your budget, desired flight time (e.g., morning or evening), any airline ratings you prefer (e.g., 4 stars or above), accommodation type (e.g., economy or business class), and any amenities you would like (e.g., Wi-Fi, meals).
+2025-01-23 18:37:23 - INFO - User response: 10
+2025-01-23 18:39:53 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:39:59 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:39:59 - INFO - Prepopulated preferences: {}
+2025-01-23 18:40:00 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:40:00 - INFO - Asking user for clarification: Please provide more details about your flight preferences, including your budget, preferred airports, desired flight time, any specific ratings you are looking for, accommodation type, and amenities you would like.
+2025-01-23 18:40:00 - INFO - User response: 4
+2025-01-23 18:40:02 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:40:02 - INFO - Asking user for clarification: Could you please clarify what the number 4 refers to in your flight preferences? Is it related to the number of travelers, budget, or something else? Additionally, please provide more details about your preferences.
+2025-01-23 18:40:02 - INFO - User response: 
+2025-01-23 18:40:05 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:40:05 - INFO - Asking user for clarification: Please provide more details about your flight preferences. Specifically, could you clarify what the number 4 refers to? Additionally, please share your budget, preferred airports, desired flight time, any specific ratings you are looking for, accommodation type, and amenities you would like.
+2025-01-23 18:40:05 - INFO - User response: 1000, 4-5 rating
+2025-01-23 18:40:07 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:40:07 - INFO - Asking user for clarification: Thank you for the information! Could you please provide your preferred airports, desired flight time, accommodation type, and any specific amenities you would like for your flight?
+2025-01-23 18:40:07 - INFO - User response: 
+2025-01-23 18:40:09 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:40:09 - INFO - Asking user for clarification: Could you please provide your preferred airports, desired flight time, accommodation type, and any specific amenities you would like for your flight? This information will help me find the best options for you.
+2025-01-23 18:40:58 - INFO - User response: yvr airport, in the morning flights, hotel, no amenities
+2025-01-23 18:45:50 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:45:54 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:45:54 - INFO - Prepopulated preferences: {}
+2025-01-23 18:45:56 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:45:57 - INFO - Asking user for clarification: Please provide your budget, preferred airports, flight time, rating, accommodation type, and any specific amenities you are looking for in your flight booking.
+2025-01-23 18:56:02 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:56:05 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:56:05 - INFO - Prepopulated preferences: {}
+2025-01-23 18:56:07 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 18:56:07 - INFO - Asking user for clarification: Please provide your budget, preferred airports, flight time, rating, accommodation type, and any specific amenities you are looking for in your flight booking.
+2025-01-23 19:00:18 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 19:00:20 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 19:00:20 - INFO - Prepopulated preferences: {}
+2025-01-23 19:00:22 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 19:00:22 - INFO - Asking user for clarification: Please provide your budget, preferred airports, desired flight time, rating preferences, accommodation type, and any specific amenities you are looking for.
+2025-01-23 19:00:30 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 19:00:33 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 19:00:33 - INFO - Prepopulated preferences: {}
+2025-01-23 19:00:34 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 19:00:37 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 19:00:37 - INFO - Prepopulated preferences: {}
+2025-01-23 19:00:39 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 19:00:39 - INFO - Asking user for clarification: Please provide your budget, preferred airports, flight time, rating, accommodation type, and any specific amenities you are looking for in your flight booking.
+2025-01-23 19:03:07 - INFO - User response: 3
+2025-01-23 19:03:09 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 19:03:09 - INFO - Asking user for clarification: Please specify the three preferences you have regarding your flight booking.
+2025-01-23 19:03:09 - INFO - User response: 4
+2025-01-23 19:03:09 - INFO - User response: 5
+2025-01-23 19:03:11 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 19:03:11 - INFO - Asking user for clarification: Please provide the five preferences you have regarding your flight booking.
+2025-01-23 19:03:11 - INFO - User response: 6
+2025-01-23 19:03:11 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 19:03:11 - INFO - Asking user for clarification: Could you please clarify what the number "4" refers to in your flight preferences? Is it the number of passengers, budget, or something else?
+2025-01-23 19:03:11 - INFO - User response: 7
+2025-01-23 19:03:13 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 19:03:13 - INFO - Asking user for clarification: Please provide the six preferences you have regarding your flight booking.
+2025-01-23 19:03:13 - INFO - User response: 8
+2025-01-23 19:03:14 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 19:03:14 - INFO - Asking user for clarification: Could you please clarify what the number "7" refers to in your flight preferences? Is it related to your budget, the number of passengers, or another aspect?
+2025-01-23 19:03:14 - INFO - User response: 9
+2025-01-23 19:03:16 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 19:03:16 - INFO - Asking user for clarification: Please provide the eight preferences you have regarding your flight booking.
+2025-01-23 19:03:18 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 19:03:18 - INFO - Asking user for clarification: Could you please clarify what the number "9" refers to in your flight preferences? Is it related to your budget, the number of passengers, or another aspect?
+2025-01-23 19:03:32 - INFO - User response: westjet flight
+2025-01-23 19:03:54 - INFO - User response: yvr 
+2025-01-23 19:03:57 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-23 19:03:57 - INFO - Asking user for clarification: Thank you for providing the preferred airport (YVR). Could you please provide your budget, flight time, rating, accommodation type, and any specific amenities you are looking for in your flight booking?
+2025-01-23 19:04:07 - INFO - User response: 1111$

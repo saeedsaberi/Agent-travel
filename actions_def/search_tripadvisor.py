@@ -1,3 +1,9 @@
+from .fetch_from_tripadvisor import fetch_tripadvisor_data 
+import logging
+
+# Create a custom logger
+logger = logging.getLogger(__name__)
+
 def search_tripadvisor(destination, preferences):
     """
     Action to search TripAdvisor for hotels and activities based on user preferences.

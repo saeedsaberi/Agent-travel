@@ -17,7 +17,7 @@ api_config = {
 # Model Configuration
 model_config = {
     "default_model": "gpt-4o-mini",
-    "temperature": 0.7,
+    "temperature": 0.1,
     "max_tokens": 150,
 }
 
@@ -77,7 +77,6 @@ You will be called again with this:
 Observation: France is a theory aiming to explain the nature of gravity consistent with quantum mechanics... There are many theories about .
 You then output the summary of the page
 
-
 PAUSE
 Action: search_internet: string theory
 
@@ -88,3 +87,11 @@ PAUSE
 Answer: reply with the summary of all the results.
 
 """
+required_fields = [
+        "budget",
+        "preferred airports",
+        "flight time",
+        "rating",
+        "accommodation type",
+        "amenities",
+    ]

@@ -1,8 +1,8 @@
 import openai
-from config import model_config
+from chatbot.config import model_config
 
 
-def rank_snippets(context, snippets):
+def rank_snippets_with_llm(context, snippets):
     """
     Rank snippets based on their relevance to a given context using GPT-4.
 

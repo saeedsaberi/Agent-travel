@@ -1,38 +1,36 @@
 import logging
 
 
-def retrieve_and_rank_travel_plans(query, preferences):
+def retrieve_and_rank_travel_plans(query, user_preferences):
     """
     Retrieve and rank the best travel plans based on user preferences.
 
     Parameters:
     - query (str): The user's travel query.
-    - preferences (dict): User preferences for the trip (budget, destinations, accommodation, etc.).
+    - user_preferences (dict): User preferences for the trip (budget, destinations, accommodation, etc.).
 
     Returns:
     - str: A summary of the best-ranked travel plan for the user.
     """
-    logging.info(f"Retrieving travel plans for query: {query}")
 
     try:
-        # Step 1: Retrieve 100 candidate travel plans (flights, hotels, vacation packages)
-        travel_options = retrieve_candidates(query, preferences, limit=100)
+        # Retrieve 100 candidate travel plans (flights, hotels, vacation packages)
+        travel_plan_candidates = retrieve_candidates(query, user_preferences, limit=100)
 
-        # Step 2: If the AI agent lacks sufficient information about preferences, ask clarifying questions
-        preferences = clarify_missing_preferences(preferences)
+        # If the AI agent lacks sufficient information about preferences, ask clarifying questions
+        user_preferences = clarify_missing_preferences(user_preferences)
 
-        # Step 3: Rank the travel plans based on user preferences
-        ranked_plans = rank_travel_plans(travel_options, preferences)
+        # Rank the travel plans based on user preferences
+        ranked_travel_plans = rank_travel_plans(travel_plan_candidates, user_preferences)
 
-        # Step 4: Provide the best-ranked plan to the user
-        best_plan = (
-            ranked_plans[0] if ranked_plans else "No suitable travel plans found."
+        # Provide the best-ranked plan to the user
+        best_ranked_plan = (
+            ranked_travel_plans[0] if ranked_travel_plans else "No suitable travel plans found."
         )
 
-        return f"The best travel plan based on your preferences is:\n\n{best_plan}"
+        return f"The best travel plan based on your preferences is:\n\n{best_ranked_plan}"
 
     except Exception as e:
-        logging.error(f"Error retrieving and ranking travel plans: {e}")
         return "Error retrieving and ranking travel plans."
 
 

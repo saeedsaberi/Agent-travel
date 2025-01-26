@@ -1,3 +1,0 @@
-[flake8]
-exclude = sandbox
-max-line-length = 150

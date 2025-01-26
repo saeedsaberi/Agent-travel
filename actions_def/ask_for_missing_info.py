@@ -1,6 +1,6 @@
 import logging
 
-from . import ask_user
+from actions_def.ask_user import ask_user
 
 
 def ask_for_missing_info(preferences):
