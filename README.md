@@ -68,9 +68,9 @@ The above diagram illustrates how the AI system processes travel-related queries
 
 To start the chatbot, run the `main.py` file:
 
-    ```bash
+```bash
     python main.py
-    ```
+```
 
 This will launch the AI system, ready to handle queries related to vacation planning and flight/hotel searches.
 
@@ -115,7 +115,7 @@ Our **AI Travel Assistant** combines **OpenAI's GPT models**, **TripAdvisor APIs
 To get started, install the required dependencies:
 ```bash
 pip install openai requests
-
+```
 
 
 The project is organized into the following folder structure:
