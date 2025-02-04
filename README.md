@@ -386,9 +386,3 @@ With AI-powered travel assistants, users can receive personalized, real-time rec
 Do you have ideas for improving this AI travel assistant? Let’s discuss in the comments! 🎉
 
 
-
-```bash
-
-This Markdown version is ready for use in platforms like GitHub, blogs, or documentation tools that support Markdown formatting. Let me know if you need further adjustments!
-
-```
