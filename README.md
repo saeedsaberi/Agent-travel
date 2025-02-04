@@ -322,7 +322,7 @@ required_fields = {
     "activities": ["Beach", "Hiking", "City Tours", "Museums"]
 }
 
-```bash
+```
 
 Users select preferences through the terminal interface, and the chatbot tailors its recommendations accordingly.
 
