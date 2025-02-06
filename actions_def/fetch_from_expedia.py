@@ -1,4 +1,5 @@
-import logging
+import logging, httpx
+
 
 logger = logging.getLogger(__name__)
 
@@ -23,7 +24,9 @@ def fetch_from_expedia(query, preferences):
     logger.info(f"Fetching travel options from Expedia with params: {params}")
 
     try:
+        print(f"Sending request to Expedia with URL: {expedia_url} and params: {params}")
         response = httpx.get(expedia_url, params=params)
+        print(f"Received response from Expedia: {response.status_code} - {response.text}")
         response.raise_for_status()
     except httpx.RequestError as e:
         logger.error(f"Error fetching travel options from Expedia: {e}")

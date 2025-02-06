@@ -1,7 +1,8 @@
-import logging
+import logging, httpx
+from chatbot.config import api_config, tripadvisor_api_url
 
+from actions_def.rank_results_by_preferences import rank_results_by_preferences
 logger = logging.getLogger(__name__)
-
 
 def fetch_tripadvisor_data(destination, preferences):
     """
@@ -18,9 +19,7 @@ def fetch_tripadvisor_data(destination, preferences):
     Returns:
     - list: A list of ranked travel options (hotels, activities) based on user preferences.
     """
-    tripadvisor_api_url = (
-        "https://api.tripadvisor.com/api/v1/hotels"  # This is a placeholder URL
-    )
+
     api_key = api_config["TRIPADVISOR_API_KEY"]
 
     # Construct the query parameters based on user preferences
@@ -40,7 +39,9 @@ def fetch_tripadvisor_data(destination, preferences):
 
     # Fetch data from the TripAdvisor API
     try:
+        print(f"Fetching data from TripAdvisor with parameters: {params}")
         response = httpx.get(tripadvisor_api_url, params=params)
+        print(f"TripAdvisor API response: {response}")
         response.raise_for_status()
     except httpx.RequestError as e:
         logger.error(

@@ -34,9 +34,11 @@ def generate_schematic_image(description, size="1792x1024"):
 
         # Get the image content
         logger.info(f"Fetching image from {image_url}")
-        response = requests.get(image_url)
-        response.raise_for_status()  # Raise an exception for bad status codes
+        image_response = requests.get(image_url)
+        image_response.raise_for_status()  # Raise an exception for bad status codes
         image_content = response.content
+        print(response.json())  # Inspect the structure
+
 
         # Save the image
         image_path = os.path.join(SAVE_DIR, "schematic_image.png")
