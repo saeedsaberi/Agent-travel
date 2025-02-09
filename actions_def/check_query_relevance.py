@@ -11,6 +11,7 @@ def check_query_relevance(query):
     Returns:
         bool: True if the query is relevant to travel planning, False otherwise.
     """
+    print(f"Checking query relevance for query: {query}")
     try:
         chat_bot = ChatBot(
             system_prompt=(
@@ -18,12 +19,13 @@ def check_query_relevance(query):
                 "travel planning activities such as booking flights, hotels, or vacation planning."
             )
         )
+        print("Created chat bot, asking for response...")
         response = chat_bot(f'Query: "{query}"\nRespond with "Relevant" or "False".')
+        print(f"Got response: {response}")
     except Exception as error:
         print(f"Failed to determine query relevance: {error}")
         logging.error(f"Failed to determine query relevance: {error}")
         return False
 
     return response.strip() == "Relevant"
-
 

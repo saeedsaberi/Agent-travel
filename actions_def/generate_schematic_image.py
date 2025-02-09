@@ -30,14 +30,18 @@ def generate_schematic_image(description, size="1792x1024"):
             quality="standard",
             n=1,
         )
+        print("Response from OpenAI:", response)
+        print("Response content:", response.content)
         image_url = response.data[0].url
+        print(f"Image URL: {image_url}")
 
         # Get the image content
         logger.info(f"Fetching image from {image_url}")
         image_response = requests.get(image_url)
         image_response.raise_for_status()  # Raise an exception for bad status codes
         image_content = response.content
-        print(response.json())  # Inspect the structure
+        print("Image content:", image_content)
+        print("Image content length:", len(image_content))
 
 
         # Save the image
@@ -54,3 +58,4 @@ def generate_schematic_image(description, size="1792x1024"):
     except Exception as e:
         logger.error(f"Error generating schematic image: {e}")
         raise
+

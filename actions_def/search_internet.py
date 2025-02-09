@@ -20,11 +20,14 @@ def search_internet(context: str, query: str, max_pages: int = other_params["max
         start = page * 10 + 1
         response = httpx.get(bing_url, params={"q": query, "offset": start}, headers=headers)
 
+        print(f"Page {page+1}, offset {start}: {response.status_code} - {response.text}")
+
         if response.status_code == 200:
             search_results.extend(
                 item.get("snippet", "No snippet available")
                 for item in response.json()["webPages"]["value"]
             )
+            print(f"Page {page+1}, offset {start}: {len(response.json()['webPages']['value'])} results")
         else:
             logging.error(
                 f"Error: Unable to retrieve search results. Status code {response.status_code} - {response.text}"
@@ -32,10 +35,18 @@ def search_internet(context: str, query: str, max_pages: int = other_params["max
             return f"Error: Unable to retrieve search results. Status code {response.status_code} - {response.text}"
 
     if search_results:
+        print(f"Total results: {len(search_results)}")
         ranked_snippets = rank_snippets_with_llm(context, search_results)
+        print(f"Ranked snippets: {ranked_snippets}")
+
         full_text = "\n".join(ranked_snippets)
+        print(f"Full text: {full_text}")
+
         summary = summarize_with_llm(context, full_text)
+        print(f"Summary: {summary}")
+
         return summary
     else:
         logging.warning("No relevant search results found.")
         return "No relevant search results found."
+

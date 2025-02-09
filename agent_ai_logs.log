@@ -104,3 +104,28 @@
 2025-02-05 19:11:09 - INFO - Prepopulated preferences: {'budget': None, 'preferred_airline': None, 'accommodation': None, 'activities': None}
 2025-02-05 19:11:14 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2025-02-05 19:11:15 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=%22flights%20with%20Delta%20airline%20mid-range%20budget%20hostel%20accommodations%20hiking%20activities%22&offset=1 "HTTP/1.1 200 OK"
+2025-02-05 19:15:55 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-05 19:15:56 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-05 19:15:56 - INFO - Prepopulated preferences: {'budget': None, 'preferred_airline': None, 'accommodation': None, 'activities': None}
+2025-02-05 19:15:59 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-05 19:15:59 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=%22mid-range%20flights%20United%20Airlines%20beach%20resort%20accommodations%22&offset=1 "HTTP/1.1 200 OK"
+2025-02-05 19:21:03 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-05 19:21:04 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-05 19:21:04 - INFO - Prepopulated preferences: {'budget': None, 'preferred_airline': None, 'accommodation': None, 'activities': None}
+2025-02-05 19:21:09 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-05 19:21:09 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=%22Economy%20flights%20to%20beach%20destinations%20with%20hotel%20accommodation%22&offset=1 "HTTP/1.1 200 OK"
+2025-02-05 19:24:39 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-05 19:24:40 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-05 19:24:40 - INFO - Prepopulated preferences: {'budget': None, 'preferred_airline': None, 'accommodation': None, 'activities': None}
+2025-02-05 19:24:50 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-05 19:24:50 - INFO - Asking user for clarification: Please provide the destination and travel dates for your flight booking.
+2025-02-05 19:25:38 - INFO - User response: want to go to mexico in the spring
+2025-02-05 19:25:40 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-05 19:25:40 - INFO - Asking user for clarification: Please provide the specific dates you plan to travel to Mexico in the spring.
+2025-02-05 19:25:49 - INFO - User response: 10-15 of march
+2025-02-05 19:25:51 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-05 19:25:51 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=%22flights%20from%20%5Buser%27s%20location%5D%20to%20Mexico%20March%2010%20to%20March%2015%2C%20economy%20class%22&offset=1 "HTTP/1.1 200 OK"
+2025-02-08 16:05:34 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-08 16:05:34 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-08 16:05:34 - INFO - Prepopulated preferences: {'budget': None, 'preferred_airline': None, 'accommodation': None, 'activities': None}
+2025-02-08 16:06:02 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
