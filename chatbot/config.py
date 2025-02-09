@@ -1,5 +1,6 @@
 # chatbot/settings.py
 import os, re
+
 action_re = re.compile(r"^Action: (\w+): (.*)$")
 
 # API Configuration
@@ -92,16 +93,16 @@ required_fields = {
     "budget": ["Economy", "Mid-range", "Luxury"],
     "preferred_airline": ["Any", "Delta", "United", "Emirates"],
     "accommodation": ["Hotel", "Hostel", "Airbnb", "Resort"],
-    "activities": ["Beach", "Hiking", "City Tours", "Museums"]
+    "activities": ["Beach", "Hiking", "City Tours", "Museums"],
 }
 
-querry_options = [
-        "1. I want to book a flight.",
-        "2. I want a hotel with a pool.",
-        "3. Help me find vacation packages.",
-        "4. Custom query"
-    ]
+query_options = [
+    "1. I want to book a flight.",
+    "2. I want a hotel with a pool.",
+    "3. Help me find vacation packages.",
+    "4. Custom query",
+]
 
 tripadvisor_api_url = (
-        "https://api.tripadvisor.com/api/v1/hotels"  # This is a placeholder URL
-    )
+    "https://api.tripadvisor.com/api/v1/hotels"  # This is a placeholder URL
+)

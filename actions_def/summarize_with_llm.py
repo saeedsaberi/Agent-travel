@@ -1,8 +1,9 @@
 import logging
-import openai 
-from chatbot.config import model_config 
+import openai
+from chatbot.config import model_config
 
-def summarize_with_llm(context, text):
+
+def summarize_with_llm(context, text) -> str:
     """
     Summarize the given text using GPT.
 
@@ -30,7 +31,7 @@ def summarize_with_llm(context, text):
             ],
         )
     except Exception as e:
-        print('summarize_with_llm:',e)
+        print("summarize_with_llm:", e)
 
     summary = completion.choices[0].message.content.strip()
     logging.info(f"Summary: {summary}")

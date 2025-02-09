@@ -129,3 +129,18 @@
 2025-02-08 16:05:34 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2025-02-08 16:05:34 - INFO - Prepopulated preferences: {'budget': None, 'preferred_airline': None, 'accommodation': None, 'activities': None}
 2025-02-08 16:06:02 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-08 16:07:01 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-08 16:07:03 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-08 16:07:03 - INFO - Prepopulated preferences: {'budget': None, 'preferred_airline': None, 'accommodation': None, 'activities': None}
+2025-02-08 16:07:10 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-08 16:07:11 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=%22mid-range%20hostels%20with%20pools%20for%20hiking%20activities%22&offset=1 "HTTP/1.1 200 OK"
+2025-02-08 16:12:54 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-08 16:12:55 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-08 16:12:55 - INFO - Prepopulated preferences: {'budget': None, 'preferred_airline': None, 'accommodation': None, 'activities': None}
+2025-02-08 16:12:58 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-08 16:12:59 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=%22mid-range%20hostels%20with%20pools%20for%20hiking%20activities%22&offset=1 "HTTP/1.1 200 OK"
+2025-02-08 16:31:08 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-08 16:31:09 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-08 16:31:09 - INFO - Prepopulated preferences: {'budget': None, 'preferred_airline': None, 'accommodation': None, 'activities': None}
+2025-02-08 16:31:14 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-08 16:31:15 - INFO - HTTP Request: GET https://api.bing.microsoft.com/v7.0/search?q=%22mid-range%20hostels%20with%20pool%20and%20hiking%20activities%22&offset=1 "HTTP/1.1 200 OK"

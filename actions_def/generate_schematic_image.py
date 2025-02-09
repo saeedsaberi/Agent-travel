@@ -1,61 +1,63 @@
-import logging
 import os
-
-import requests  # type: ignore
+import requests
 from openai import OpenAI
-
 from chatbot.config import SAVE_DIR, api_config
+from typing import Literal
+
+# Define allowed image sizes
+SizeType = Literal["256x256", "512x512", "1024x1024", "1792x1024", "1024x1792"]
 
 
-def generate_schematic_image(description, size="1792x1024"):
+def generate_schematic_image(description: str, size: SizeType = "1792x1024") -> str:
     """
-    Use DALL-E to generate a schematic image based on a detailed description.
+    Generates a schematic image using DALL-E based on a provided description.
 
     Parameters:
-    - description: str, the detailed schematic description from GPT-4.
+        description (str): The detailed schematic description.
+        size (SizeType): The size of the generated image. Defaults to "1792x1024".
 
     Returns:
-    - str, the path to the saved image.
+        str: The path to the saved image.
+
+    Raises:
+        Exception: If image generation or fetching fails.
     """
-    logger = logging.getLogger(__name__)
-    logger.info("generate_schematic_image")
-
-    client = OpenAI(api_key=api_config["OPENAI_API_KEY"])
-
     try:
-        response = client.images.generate(
+        # Initialize OpenAI client
+        api_key = api_config.get("OPENAI_API_KEY")
+        if not api_key:
+            raise ValueError("Missing OpenAI API key in configuration.")
+
+        openai_client = OpenAI(api_key=api_key)
+
+        # Generate the image
+        image_response = openai_client.images.generate(
             model="dall-e-3",
             prompt=description,
             size=size,
             quality="standard",
             n=1,
         )
-        print("Response from OpenAI:", response)
-        print("Response content:", response.content)
-        image_url = response.data[0].url
-        print(f"Image URL: {image_url}")
 
-        # Get the image content
-        logger.info(f"Fetching image from {image_url}")
-        image_response = requests.get(image_url)
-        image_response.raise_for_status()  # Raise an exception for bad status codes
-        image_content = response.content
-        print("Image content:", image_content)
-        print("Image content length:", len(image_content))
+        # Extract image URL
+        image_url = image_response.data[0].url
+        if not image_url:
+            raise Exception("OpenAI did not return a valid image URL.")
 
+        # Fetch the generated image
+        http_response = requests.get(image_url, timeout=10)
+        http_response.raise_for_status()
 
-        # Save the image
+        # Save the image to a file
         image_path = os.path.join(SAVE_DIR, "schematic_image.png")
-        logger.info(f"Saving image to {image_path}")
         with open(image_path, "wb") as image_file:
-            image_file.write(image_content)
+            image_file.write(http_response.content)
 
-        # Return the path to the saved image
         return image_path
-    except requests.exceptions.RequestException as e:
-        logger.error(f"Error fetching image: {e}")
-        raise
-    except Exception as e:
-        logger.error(f"Error generating schematic image: {e}")
-        raise
 
+    except requests.exceptions.RequestException as e:
+        raise Exception(f"Network error while fetching image: {e}") from e
+    except ValueError as e:
+        raise Exception(f"Configuration error: {e}") from e
+    except Exception as e:
+        raise Exception(f"Unexpected error during image generation: {e}") from e
